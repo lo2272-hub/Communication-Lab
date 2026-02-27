@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    background-color: lightpink;
+}
+.mainWrapper{
+    background-color: rgb(221, 200, 242);
+    height: 400px;
+    width: 100%;
+    max-width: 800px;
+    margin:auto;
+}
+
+#headerWrapper{
+    background-color: rgb(245, 237, 192);
+    /* text-align: center; */
+}
+
+#headerWrapper h1{
+    text-align: center;
+}
+
+.navButton{
+    background-color: blanchedalmond;
+    width: 24%;
+    height: 23px;
+    text-align: center;
+    outline: 1px white solid;
+    display: inline-block;
+}
+
+#navWrapper{
+    outline: 2px dotted indianred;
+    width: 415px;
+    margin: auto;
+    
+}
