@@ -56,17 +56,17 @@ body {
 }
 
 
-.hk {
+.joy {
     position: relative;
     width: 100%;
 }
 
-.hk img {
+.joy img {
     width: 100%;
     display: block;
 }
 
-.hk .arrow1 {
+.joy .arrow1 {
     position: absolute;
     top: 20%;
     right: 50px;
@@ -75,7 +75,7 @@ body {
     text-decoration: none;
 }
 
-.hk .arrow2 {
+.joy .arrow2 {
     position: absolute;
     top: 20%;
     left:  50px;
