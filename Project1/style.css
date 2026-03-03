@@ -39,6 +39,11 @@ body {
     text-decoration: none;   
     color: white;
 }
+
+.categories1 :hover{
+    color: rgb(243, 200, 8);
+}
+
 .categories2 p{
     margin: 0px;
 }
@@ -55,6 +60,9 @@ body {
     color: white;
 }
 
+.categories2 :hover{
+    color: rgb(243, 200, 8);
+}
 
 .hk {
     position: relative;
@@ -88,6 +96,7 @@ body {
     margin-top: -340px;
    padding-left: 20px;
     position: relative;
+    /* position: absolute; */
     display: flex;
     justify-content: space-between;
 }
@@ -115,6 +124,7 @@ body {
     margin-top: 20px;
    padding-left: 20px;
     position: relative;
+    /* position: absolute; */
     display: flex;
     justify-content: space-between;
 }
@@ -128,7 +138,8 @@ body {
 }
 
 .long{
-    padding: 20px;
+    /* padding: 20px; */
+    margin: 20px;
 }
 .long1{
     width: 100%;
@@ -136,6 +147,7 @@ body {
 }
 
 .long2{
+    /* outline: 1px blue solid; */
     margin-top: 20px;
     background-color: white;
     width:100% ;
@@ -144,6 +156,7 @@ body {
     padding-bottom: 20px;
     margin-right: 20px;
 }
+
 .toy{
     width: 100%;
     display: block;

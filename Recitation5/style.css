@@ -1,18 +1,18 @@
 body {
     margin: 0px;
+    /* overflow-x: hidden; */
 }
 
 .navBar1 {
     background-color: rgb(19, 25, 33);
     height: 60px;
+    width: 100%;    
+    /* width: 2000px */
+min-width: 1400px;
 
 }
 
 .location {
-    height: 60px;
-}
-
-.browser {
     height: 60px;
 }
 
@@ -25,6 +25,7 @@ body {
     background-color: rgb(35, 47, 62);
     height: 40px;
     margin-top: 0px;
+    
 }
 .all{
     height: 38px;
@@ -46,10 +47,13 @@ body {
     text-decoration: none;   
     color: white;
 }
+.categories1 :hover{
+    color: rgb(255, 242, 0);
+}
 .categories2 p{
     margin: 0px;
 }
- .categories2{
+ .categories2 {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
@@ -60,5 +64,61 @@ body {
 .categories2 a {
     text-decoration: none;   
     color: white;
+}
+.categories2 :hover{
+    color: rgb(255, 242, 0);
+}
+
+#searchBar{
+    outline: 1px yellow solid;
+    display: inline-block;
+    /* width:500px; */
+    width: 50%;
+    height: 60px;
+}
+
+#searchBar div{
+    outline:1px rgb(255, 4, 0) solid;
+    display: inline-block;
+    /* margin: 0px; */
+    margin-top: 10px;
+    height: 36px;
+
+}
+.searchDropdown{
+    width: 50px;
+    color: rgb(91, 89, 89);
+    vertical-align: top;
+    background-color: rgb(208, 210, 213);
+    height: 40px;
+    margin: 0;
+    
+}
+.searchDropdown p{
+    margin-left: 10px;
+}
+/* .drop p{
+    padding-right: 0;
+} */
+
+.searchInput{
+    width: calc(100% - 120px);
+    vertical-align: top;
+    /* padding-top: 10px; */
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.searchInput input{
+    width: 95%;
+    height: 30px;
+    font-size: 25px;
+}
+.searchSubmit{
+    width: 50px;
+    margin: 0;
+}
+.browser{
+    /* padding-top: 10px; */
+    height: 38px;
 }
 

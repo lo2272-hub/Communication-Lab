@@ -39,6 +39,11 @@ body {
     text-decoration: none;   
     color: white;
 }
+
+.categories1 :hover{
+    color: rgb(244, 170, 239);
+}
+
 .categories2 p{
     margin: 0px;
 }
@@ -55,6 +60,9 @@ body {
     color: white;
 }
 
+.categories2 :hover{
+    color: rgb(244, 170, 239);
+}
 
 .joy {
     position: relative;

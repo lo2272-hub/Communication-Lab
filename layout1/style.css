@@ -1,0 +1,75 @@
+body{
+    margin: 0px;
+    background-color: rgb(200, 244, 244);
+}
+.box{
+    outline: 1px dashed black;
+    width: 200px;
+    padding: 30px;
+}
+.box p{
+    background-color: rgb(250, 213, 228);
+    text-align: center;
+}
+
+.one{
+    position: relative;
+    /* in relation to its natural position */
+    left: 10px;
+    top: 20px;
+}
+.one span{
+    position: relative;
+    left: 2px;
+    top: 2px;
+}
+
+.two{
+    position: absolute;
+    /* does not change with the screen size */
+    /* the position relate to the page */
+    left: 300px;
+    top:200px;
+    left: 400px;
+}
+.three{
+    position: fixed;
+    left: 300px;
+    top: 0;
+    /* browser */
+}
+
+.five{
+    position: sticky;
+    top: 100px;
+    bottom: 100px;
+    /* scrolling to a certain position and sticky */
+}
+.six{
+    height: 2000px;
+}
+
+.seven{
+    margin: auto;
+    width: 100%;
+    max-width: 300px;
+    height: 50vh;
+    position: relative;
+}
+
+.sevenChild{
+    outline: purple 1px dotted;
+    width: 50px;
+    position: absolute;
+    left: 0px; 
+    top:0px;
+   
+}
+    
+
+
+.sevenChild p{
+    background-color: black;
+    color: aquamarine;
+    margin: 0;
+}
