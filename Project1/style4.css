@@ -1,6 +1,131 @@
 body{
     margin: 0;
 }
+
 .lol{
 width: 100%;
+}
+
+.sideBar{
+    position: absolute;
+    /* outline: black 1px solid; */
+    width: 245px;
+    height: 1628px;
+    text-align:start;
+    font-size: 14px;
+    padding-left: 30px;
+    padding-top: 10px;
+    top: 145px;
+}
+
+.idea :hover{
+    color: rgb(200, 122, 12);
+}
+
+.idea{
+    /* outline: 1px blue solid; */
+   padding-top: 5px;
+}
+
+.idea p{
+    margin: 0;
+}
+
+.seeMore p{
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: rgb(33, 98, 161);
+}
+
+.review{
+   padding-top: 5px;
+}
+.review p{
+    margin: 0;
+    color: orange;
+}
+
+.other{
+    padding-top: 5px;
+}
+
+.p{
+   margin-top: 5px;
+    width: 100%;
+    margin-left: -12px;
+}
+
+.mainbox{
+    display: flex;
+    width: 100%;
+}
+
+.mainbox1{
+    /* outline: 1px red solid; */
+    height: 1350px;
+    width: 880px;
+    position: absolute;
+    width: 60%;
+    left: 275px;
+    top: 145px;
+}
+
+.mainbox1 img{
+    width: 100%;
+}
+
+.mainbox2{
+    /* outline: 1px rgb(153, 255, 0) solid; */
+    height: 800px;
+    width: 880px;
+    width: 60%;
+    position: absolute;
+    left: 570px;
+    top: 1495px;
+}
+
+.mainbox2 img{
+    width: 100%;
+}
+
+.mainbox3{
+    /* outline: 1px pink solid; */
+    position: absolute;
+    top: 145px;
+    left: 1160px;
+    padding: 5px;
+}
+
+.mainbox3 img{
+    width: 87%;
+}
+
+.mainbox3 a{
+    color: rgb(0, 113, 133,);
+     font-size: 12px;
+    text-decoration: none;
+}
+
+.mainbox3 p{
+    font-size: 12px;
+    color: gray;
+}
+
+.mainbox3 :hover{
+    color: rgb(200, 122, 12);
+}
+
+.bottom{
+    margin-left: 10px;
+    border: 1px solid orange;
+    background-color: orange;
+    border-radius: 20px;
+    height: 35px;
+    width: 100px;
+    text-align: center;
+}
+
+.bottom p{
+    font-size: 20px;
 }

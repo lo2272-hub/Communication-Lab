@@ -6,75 +6,274 @@ body {
 .navBar1 {
     background-color: rgb(19, 25, 33);
     height: 60px;
+    width: 100%;
+    min-width: 1000px;
 
 }
 
+.location{
+    height: 45px;
+   margin-top: 5px;
+   margin-left: 20px;
+}
 
- .navBar{
+.English {
     height: 55px;
- }
+    margin-right: 0px;
+}
+
+.headerWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+#searchBar {
+    /* outline: 1px yellow solid; */
+    display: inline-block;
+    width: 50%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#searchBar div {
+    /* outline:1px rgb(255, 4, 0) solid; */
+    display: inline-block;
+    margin-top: 10px;
+    height: 36px;
+
+}
+
+.searchDropdown {
+    width: 50px;
+    color: rgb(91, 89, 89);
+    vertical-align: top;
+    background-color: rgb(223, 225, 227);
+    height: 35px;
+    margin: 0;
+    position: relative;
+    border-radius: 3px 0 0 3px;
+}
+
+.searchDropdown p {
+    font-size: 12px;
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    left: 8px;
+}
+
+.searchInput {
+    width: 100%;
+    vertical-align: top;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.searchInput input {
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+}
+
+.searchSubmit {
+    width: 50px;
+    margin: 0;
+}
+
+.browser {
+    height: 37px;
+}
+
+
+.navBar {
+    height: 55px;
+}
 
 .navBar2 {
     background-color: rgb(35, 47, 62);
     height: 40px;
     margin-top: 0px;
+    overflow-x: scroll;
 }
-.all{
+
+.all {
     height: 38px;
     display: inline-block;
     vertical-align: middle;
 }
-.categories1 p{
+
+.categories1 p {
     margin: 0px;
 }
- .categories1{
+
+.categories1 {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 0px;
-    color:  rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     font-size: 14px;
     display: inline-block;
- }
- .categories1 a {
-    text-decoration: none;   
+}
+
+.categories1 a {
+    text-decoration: none;
     color: white;
 }
 
-.categories1 :hover{
-    color: rgb(244, 170, 239);
-}
-
-.categories2 p{
+.categories2 p {
     margin: 0px;
 }
- .categories2{
+
+.categories2 {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
-    color:  rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     font-size: 14px;
     display: inline-block;
- }
-.categories2 a {
-    text-decoration: none;   
+}
+
+.categories3 a {
+    text-decoration: none;
     color: white;
 }
 
-.categories2 :hover{
-    color: rgb(244, 170, 239);
+.categories3 :hover {
+    color: rgb(216, 93, 232);
 }
 
-.joy {
+.categories3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    display: inline-block;
+}
+.cards1 {
+    margin-top: -340px;
+    padding-left: 20px;
     position: relative;
-    width: 100%;
+    display: flex;
 }
 
-.joy img {
+.card1 {
+    background-color: white;
+    width: 23%;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 20px;
+
+}
+
+.cookie {
+    width: 100%;
+    align-content: center;
+    padding-bottom: 10px;
+}
+
+.discover {
+    font-size: 13px;
+     text-decoration: none;
+    color: rgb(33, 98, 161);
+
+}
+
+.discover:hover{
+    color: rgb(243, 200, 8);
+}
+
+.cards2 {
+    margin-top: 20px;
+    padding-left: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card2 {
+    background-color: white;
+    width: 23%;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 20px;
+}
+
+.long {
+    margin: 20px;
+}
+
+.long1 {
     width: 100%;
     display: block;
 }
 
-.joy .arrow1 {
+.long2 {
+    /* outline: 1px blue solid; */
+    margin-top: 20px;
+    background-color: white;
+    width: 98.5%;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.toy {
+    width: 100%;
+    display: block;
+}
+
+.back {
+    background-color: rgb(55, 71, 90);
+    padding: 10px;
+    text-align: center;
+}
+
+.top {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top:hover{
+    color: rgb(216, 93, 232);
+}
+
+.bottom1 {
+    width: 100%;
+    display: block;
+}
+
+
+#mainContainer {
+    position: relative;
+    padding-top: 260px;
+}
+
+/* ADS */
+
+.ads {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.hk1 {
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+
+.hk img {
+    width: 100%;
+    display: block;
+}
+
+.arrow1 {
     position: absolute;
     top: 20%;
     right: 50px;
@@ -83,91 +282,61 @@ body {
     text-decoration: none;
 }
 
-.joy .arrow2 {
+.arrow2 {
     position: absolute;
     top: 20%;
-    left:  50px;
+    left: 50px;
     color: white;
     font-size: 50px;
     text-decoration: none;
 }
+.arrow1:hover{
+    color: rgb(55, 71, 90);
+}
 
-.cards1{
-    margin-top: -340px;
-   padding-left: 20px;
-    position: relative;
+.arrow2:hover{
+    color: rgb(55, 71, 90);
+}
+
+
+.cards {
     display: flex;
-    justify-content: space-between;
-}
-.card1{
-    background-color: white;
-    width:23% ;
-    padding-left:20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-right: 20px;
-
-}
-.cookie{
-    width: 300px;
-    align-content: center;
-    padding-bottom: 15px;
-}
-.discover{
-    font-size: 13px;
-    text-decoration: none;
-    color: rgb(33, 98, 161);
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: flex-start;
 }
 
-.cards2{
-    margin-top: 20px;
-   padding-left: 20px;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-}
-.card2{
-    background-color: white;
-    width:23% ;
-    padding-left:20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-right: 20px;
-}
-
-.long{
-    padding: 20px;
-}
-.long1{
-    width: 100%;
-    display: block;
-}
-
-.long2{
-    margin-top: 20px;
-    background-color: white;
-    width:100% ;
-    padding-left:20px;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    margin-right: 20px;
-}
-.toy{
-    width: 100%;
-    display: block;
-}
-.back{
-    background-color: rgb(55, 71, 90);
+.singleCardWrapper {
+    width: 100px;
+    width: 25%;
+    max-width: 330px;
+    min-width: 200px;
     padding: 10px;
-    text-align: center;
-}
-.top{
-    color: white;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 5px;
 }
 
-.bottom1{
-    width: 100%;
-    display: block;
+.card {
+    background-color: white;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 95%;
+}
+
+.cardnine {
+    display: none;
+}
+
+@media (max-width: 1360px) {
+    .cardnine {
+        display: block;
+    }
+}
+
+
+@media (max-width: 630px) {
+    .cardnine {
+        display: none;
+    }
 }

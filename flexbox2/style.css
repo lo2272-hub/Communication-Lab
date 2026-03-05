@@ -1,0 +1,28 @@
+body{
+    background-color: khaki;
+}
+
+.contanier{
+    display: flex;
+    justify-content: space-between;
+}
+
+.item1{
+    outline: 3px orange dotted;
+    width: 1000px;
+}
+
+.contanier2{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+
+.item2{
+    outline: 1px white solid ;
+    height: 300px;
+    width: 300px;
+}
