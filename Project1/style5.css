@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 0px;
 }
 
 .navBar1 {
@@ -10,10 +10,10 @@ body {
 
 }
 
-.location{
+.location {
     height: 45px;
-   margin-top: 5px;
-   margin-left: 20px;
+    margin-top: 5px;
+    margin-left: 20px;
 }
 
 .English {
@@ -135,133 +135,104 @@ body {
     display: inline-block;
 }
 
+.picture {
+    /* border: 1px blue solid; */
+    height: 500px;
+    width: 645px;
+    position: sticky;
+    top: 0px;
+}
 
-
-
-
-.lol {
+.picture img {
     width: 100%;
 }
 
-.sideBar {
-    position: absolute;
-    /* outline: black 1px solid; */
-    width: 245px;
-    height: 1628px;
-    text-align: start;
+.introduction {
+    /* border: 1px green solid; */
+    height: 830px;
+    width: 500px;
+    position: relative;
+    top: -500px;
+    left: 645px;
+    padding-left: 20px;
+}
+
+.introduction p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.introduction img {
+    width: 50%;
+}
+
+.header p {
+    font-size: 24px;
+}
+
+.about {
     font-size: 14px;
-    padding-left: 30px;
-    padding-top: 10px;
-    top: 145px;
 }
 
-.idea :hover {
-    color: rgb(200, 122, 12);
+.about span {
+    background-color: rgb(243, 200, 8);
+    border-radius: 5px;
 }
 
-.idea {
-    /* outline: 1px blue solid; */
-    padding-top: 5px;
-}
-
-.idea p {
-    margin: 0;
-}
-
-.seeMore p {
-    margin: 0;
-    padding-top: 5px;
-    padding-bottom: 5px;
+.about span:hover {
     color: rgb(33, 98, 161);
 }
 
-.review {
-    padding-top: 5px;
+.customer {
+    padding-top: 10px;
 }
 
-.review p {
-    margin: 0;
-    color: orange;
-}
-
-.other {
-    padding-top: 5px;
-}
-
-.p {
-    margin-top: 5px;
-    width: 100%;
-    margin-left: -12px;
-}
-
-.mainbox {
-    display: flex;
-    width: 100%;
-}
-
-
-.bottom {
-    margin-left: 10px;
-    border: 1px solid orange;
-    background-color: orange;
-    border-radius: 20px;
-    height: 30px;
-    width: 100px;
-   text-align: center;
-   padding-top: 5px;
-   text-decoration: none;
-}
-
-.bottom p {
+.customer p {
     font-size: 20px;
 }
 
-.hi {
-    position: absolute;
-    left: 275px;
-    top: 145px;
-    display: flex;
-    /* justify-content: space-between; */
-    flex-wrap: wrap;
-}
-
-.box {
-    width: 24%;
-    padding: 5px;
-}
-
-.box a{
-    color: rgb(0, 113, 133 );
-    font-size: 18px;
+.comment {
+    /* border: 1px palevioletred solid; */
+    height: 500px;
+    width: 800px;
+    position: relative;
+    left: 645px;
+    top: -500px;
+    padding-left: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-decoration: none;
 }
 
-.box p {
+.top b {
+    font-size: 20px;
+}
+
+.blackshadow{
+    width: 30%;
+}
+.story img{
+    width: 30%;
+}
+
+.story p{
+    font-size: 14px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.story img:hover{
+    scale: 200%;
+}
+
+.healing{
+    padding-top: 10px;
+    width: 37%;
+}
+
+.dark{
+    width: 40%;
+    padding-top: 10px;
+}
+
+.more{
     font-size: 12px;
-    color: gray;
-}
-
-.box:hover {
-    color: rgb(200, 122, 12);
-}
-
-.box img {
-    width: 100%;
-}
-
-.boxNot {
-    width: 24%;
-    padding: 5px;
-}
-
-
-
-.boxNot p {
-    font-size: 12px;
-    color: gray;
-}
-
-.boxNot img {
-    width: 100%;
+    color: darksalmon;
 }
