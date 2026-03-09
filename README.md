@@ -11,13 +11,13 @@ I mainly learn html and css right now. But I'm looking forward to exploring more
 - [Journey to spreadsheet](https://docs.google.com/spreadsheets/d/1LdQYsOHNv-1dBA1zyZRBTqEB-8OQJGE30Q6ba7zpSw0/edit?usp=sharing)
 
 ![four](four.png)
-- [Life Scroll](Recitation)
+- [Life Scroll](https://lo2272-hub.github.io/Communication-Lab/Recitation)
 
 ![lifemap](lifemap.png)
-- [Tutorial on the Web ](tutorialhttps://lo2272-hub.github.io/Communication-Lab/tutorial/)
+- [Tutorial on the Web ](https://lo2272-hub.github.io/Communication-Lab/tutorial/)
 
 ![tutorial](hair.png)
-- [Shanzhai Website](Project1)
+- [Shanzhai Website](https://lo2272-hub.github.io/Communication-Lab/Project1)
 
 ![project](shanzhai.png)
 
