@@ -14,7 +14,7 @@ I mainly learn html and css right now. But I'm looking forward to exploring more
 - [Life Scroll](Recitation)
 
 ![lifemap](lifemap.png)
-- [Tutorial on the Web ](tutorial)
+- [Tutorial on the Web ](tutorialhttps://lo2272-hub.github.io/Communication-Lab/tutorial/)
 
 ![tutorial](hair.png)
 - [Shanzhai Website](Project1)
