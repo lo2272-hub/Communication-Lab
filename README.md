@@ -1,10 +1,23 @@
 # This is Lisa's Commlab Page 
-## Here you find my project 
+## Here you can find my project 
 
-I made them all this year.
+I made them all during Spring 2026 (๑╹ω╹๑ )
+
+I mainly learn html and css right now. But I'm looking forward to exploring more in the future ദ്ദി(｡•̀ ᗜ<)
+
 - [Journey to spreadsheet](https://docs.google.com/spreadsheets/d/1LdQYsOHNv-1dBA1zyZRBTqEB-8OQJGE30Q6ba7zpSw0/edit?usp=sharing)
+
+![four](four.png)
 - [Life Scroll](Recitation)
+
+![lifemap](lifemap.png)
 - [Tutorial on the Web ](tutorial)
 
-Below is me:
+![tutorial](hair.png)
+- [Shanzhai Website](Project1)
+
+![project](shanzhai.png)
+
+Below is me  ૮꒰ ྀི˶• ๑ •˶ ྀི꒱ა
+
 ![hi](me.JPG)
