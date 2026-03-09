@@ -2,11 +2,9 @@
 ## Here you find my project 
 
 I made them all this year.
-- Journey to spreadsheet
-- Life Scroll
+- [Journey to spreadsheet](https://docs.google.com/spreadsheets/d/1LdQYsOHNv-1dBA1zyZRBTqEB-8OQJGE30Q6ba7zpSw0/edit?usp=sharing)
+- [Life Scroll](Recitation)
 - [Tutorial on the Web ](tutorial)
-
-By the way, this is [Google](https://google.com)
 
 Below is me:
 ![hi](me.JPG)
