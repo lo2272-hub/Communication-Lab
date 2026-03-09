@@ -9,4 +9,4 @@ I made them all this year.
 By the way, this is [Google](https://google.com)
 
 Below is an interesting image:
-![cup.png]
+![^^](cup.png)
