@@ -207,10 +207,6 @@ width: 100%;
     color: rgb(33, 98, 161);
 }
 
-.customer {
-    padding-top: 10px;
-}
-
 .customer p {
     font-size: 20px;
 }
@@ -223,6 +219,7 @@ width: 100%;
     left: 645px;
     top: -500px;
     padding-left: 20px;
+    margin-top: 35px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
