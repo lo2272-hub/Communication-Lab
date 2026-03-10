@@ -219,7 +219,6 @@ width: 100%;
     left: 645px;
     top: -500px;
     padding-left: 20px;
-    margin-top: 35px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -250,7 +249,7 @@ width: 100%;
 }
 
 .dark{
-    width: 40%;
+    width: 30%;
     padding-top: 10px;
 }
 
