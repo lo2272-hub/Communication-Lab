@@ -91,17 +91,13 @@ body {
 }
 
 .navBar2 {
-    background-color: rgb(35, 47, 62);
+    /* background-color: rgb(35, 47, 62); */
+    background-color: orange;
     height: 40px;
     margin-top: 0px;
     overflow-x: scroll;
 }
 
-.all {
-    height: 38px;
-    display: inline-block;
-    vertical-align: middle;
-}
 
 .categories1 p {
     margin: 0px;
@@ -111,6 +107,7 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 0px;
+    margin-left: 20px;
     color: rgb(255, 255, 255);
     font-size: 14px;
     display: inline-block;
