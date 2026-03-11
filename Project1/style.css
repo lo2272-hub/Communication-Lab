@@ -296,6 +296,19 @@ body {
     font-size: 14px;
 }
 
+.icon{
+    height: 40px;
+    background-color:rgb(19, 26, 34) ;
+    text-align: center;
+}
+
+.icon p{
+    margin-top: 0px;
+    padding-top: 15px;
+    color: white;
+    font-size: 12px;
+}
+
 #mainContainer {
     position: relative;
     padding-top: 260px;
