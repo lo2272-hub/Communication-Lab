@@ -1,5 +1,4 @@
 # Amaz☺n
----
 ## by Lisa
 *A Shanzai website of Amazon for a totally different shopping experience*🛒🛍️😆
 ![Amaz☺n](smile.png)
