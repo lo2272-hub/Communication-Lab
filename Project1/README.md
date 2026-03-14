@@ -65,7 +65,7 @@ It contains 6 main ```div``` boxes
 
 - ```<div class="navBar1">```is responsible for  search bar. Inside this div box, there is an ```<div id=searchBar">``` containing three parts of the search bar - ```<class="searchDropdown">```,the left text part,```<class="searchInput">```, the middle input part, and ```<class="searchSubmit">```, the right img part.
 
-<img src="searchBar.png" width=50%>
+<img src="searchbar.png" width=50%>
 <img src="previewSearchbar.png" width=50%>
 
 - ```<div class="navBar2">```  is responsible for the categories on the top. Inside it, there are several div boxes controlling each single text.
