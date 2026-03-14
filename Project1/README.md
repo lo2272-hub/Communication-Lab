@@ -65,15 +65,16 @@ It contains 6 main ```div``` boxes
 
 - ```<div class="navBar1">```is responsible for  search bar. Inside this div box, there is an ```<div id=searchBar">``` containing three parts of the search bar - ```<class="searchDropdown">```,the left text part,```<class="searchInput">```, the middle input part, and ```<class="searchSubmit">```, the right img part.
 
-![searchbar](searchbar.png)
-![searchbar](previewSearchbar.png)
+<img src="searchBar.png" width=50%>
+<img src="previewSearchbar.png" width=50%>
 
-- ```<div class=navBar2">```  is responsible for the categories on the top. Inside it, there are several div boxes controlling each single text.
+- ```<div class="navBar2">```  is responsible for the categories on the top. Inside it, there are several div boxes controlling each single text.
 
 - ``` <div id="mainContainer">``` has ads ``` <div class="ads">``` and recommendation cards```<div class="cards">``` inside.
 All the cards share the same strucrure. Each of them is consist of a white background``` <div class="singleCardWrapper">```, a header such as ```<h3>Shop for your home essentials</h3>```, an image such as ```<img class="cookie" src="images/home.png" alt="">```, and a link ```<a class="discover" href="index3.html">Discover more in home</a>```
 
-![card](card.png)
+<img src="card.png" width=50%>
+
 <img src="previewCard.png" width=30%>
 
 - ```<div class="long">``` is responsible for the other two wide cards behind the eights recommendation cards.
@@ -82,8 +83,9 @@ All the cards share the same strucrure. Each of them is consist of a white backg
 
 - ```<div class="bottom">``` is a copying version of the amazon's bottom part. It contains four ```<div class="smallBottom">```
 
-![bottom](bottom.png)
-![bottom](previewBottom.png)
+<img src="bottom.png" width=50%>
+
+<img src="previewBottom.png" width=50%>
 
 **404 Page**
 
@@ -99,11 +101,11 @@ Its top also shares the same structure as the previous pages. The main body is `
 In ```<div class="hi">```, I made two versions of the product page, one is clickable, the other is unclickable.
 - The clickable one is named ```<div class="box">```with both an clickable image and a link.
 
-![clickable](clickable.png)
+<img src="clickable.png" width=50%>
 
 - The unclickable one is named ```<div class="boxNot">``` with everything is unclickable inside.
 
-![unclickable](unclickable.png)
+<img src="unclickable.png" width=50%>
 
 But they are looked pretty much the same visually.
 
