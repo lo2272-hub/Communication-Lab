@@ -84,6 +84,43 @@ All the cards share the same strucrure. Each of them is consist of a white backg
 ![bottom](bottom.png)
 ![bottom](previewBottom.png)
 
+**404 Page**
+
+The top search bar and the bottom part are the same as the homepage.
+The unique part is in the middle```<div class="notfound">```which contains a link to the next page as well as an image of the alpaca 
+
+![alpaca](alpaca.png)
+
+**Laugh-out-loud Picks Page**
+
+Its top also shares the same structure as the previous pages. The main body is ```<div class="mainbox">``` which contains ```<div class="sideBar">```, a side bar on the left, and ```<div class="hi">```, a collection of all the laugh-out-loud products on the right.
+
+In ```<div class="hi">```, I made two versions of the product page, one is clickable, the other is unclickable.
+- The clickable one is named ```<div class="box">```with both an clickable image and a link.
+
+![clickable](clickable.png)
+
+- The unclickable one is named ```<div class="boxNot">``` with everything is unclickable inside.
+
+![unclickable](unclickable.png)
+
+But they are looked pretty much the same visually.
+
+![previewProduct](previewProduct.png)
+
+**Product Introduction Page**
+Because I made three clickable boxes on laugh-out-loud picks page, they all share the same structure.
+I divided the page into two boxes.
+- ```<div class="picture">``` on the left is consist of two different sizes of images of the product. One big size in ```<img src="images/bigPizza.png" alt="">```and seven small size in ```<div class="small">```
+They don't co-move with the other box.
+
+![small](small.png)
+
+- The ```<div class="introduction">``` on the right will keep moving down as scrolling down the page. It consists of ```<div class="header">```, the eye-catching description of the product, ```<div class="about">```, the detailed introduction, ```<div class="about">```, customer rating, and ```<div class="comment">```, some warm and interesting stories between people and the product.
+
+![right](right.png)
+
+
 
 
 
