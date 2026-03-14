@@ -73,7 +73,7 @@ It contains 6 main ```div``` boxes
 - ``` <div id="mainContainer">``` has ads ``` <div class="ads">``` and recommendation cards```<div class="cards">``` inside.
 All the cards share the same strucrure. Each of them is consist of a white background``` <div class="singleCardWrapper">```, a header such as ```<h3>Shop for your home essentials</h3>```, an image such as ```<img class="cookie" src="images/home.png" alt="">```, and a link ```<a class="discover" href="index3.html">Discover more in home</a>```
 
-![card](card.png)![previewCard](previewCard.png)
+![card](card.png)
 <img src="previewCard.png" width=30%>
 
 - ```<div class="long">``` is responsible for the other two wide cards behind the eights recommendation cards.
@@ -90,7 +90,7 @@ All the cards share the same strucrure. Each of them is consist of a white backg
 The top search bar and the bottom part are the same as the homepage.
 The unique part is in the middle```<div class="notfound">```which contains a link to the next page as well as an image of the alpaca 
 
-![alpaca](alpaca.png)
+<img src="alpaca.png" width=50%>
 
 **Laugh-out-loud Picks Page**
 
@@ -107,7 +107,7 @@ In ```<div class="hi">```, I made two versions of the product page, one is click
 
 But they are looked pretty much the same visually.
 
-![previewProduct](previewProduct.png)
+<img src="previewProduct.png" width=50%>
 
 **Product Introduction Page**
 Because I made three clickable boxes on laugh-out-loud picks page, they all share the same structure.
@@ -115,11 +115,11 @@ I divided the page into two boxes.
 - ```<div class="picture">``` on the left is consist of two different sizes of images of the product. One big size in ```<img src="images/bigPizza.png" alt="">```and seven small size in ```<div class="small">```
 They don't co-move with the other box.
 
-![small](small.png)
+<img src="small.png" width=50%>
 
 - The ```<div class="introduction">``` on the right will keep moving down as scrolling down the page. It consists of ```<div class="header">```, the eye-catching description of the product, ```<div class="about">```, the detailed introduction, ```<div class="about">```, customer rating, and ```<div class="comment">```, some warm and interesting stories between people and the product.
 
-![right](right.png)
+<img src="right.png" width=50%>
 
 
 
