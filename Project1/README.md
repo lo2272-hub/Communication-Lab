@@ -123,6 +123,25 @@ They don't co-move with the other box.
 
 <img src="right.png" width=50%>
 
+---
+## Technical CSS
+
+The key part in CSS is the flexbox since I have too many items in the same structures as well as they need to be arranged in line. Basically, I put the small boxes which belong together in a big flexbox. And then I gave the position, the width and height of the big box first. Then I chose ```display: flex;```and ```flex-wrap: wrap;``` to control the space between the small box.
+Because I wanted four boxes in one line all the time, I gave the ```width;24%``` to the small boxes. (I still have some trouble to give 25%😭)
+
+*Here is a specific example code from the laugh-out-loud picks page:*
+
+<img src="css1.png" width=50%>
+<img src="css2.png" width=50%>
+
+The other method that I applied to align boxes is giving the big box ```display: flex;``` and simply just writing```gap: 10px;``` I think this method is suitable for small box with a single item such as an image, while the flex-wrap one is more common but hard to control.
+
+*Here is a specific example code from the product introduction page:*
+
+<img src="css3.png" width=50%>
+<img src="css4.png" width=50%>
+
+
 
 
 
