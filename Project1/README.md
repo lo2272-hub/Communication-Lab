@@ -185,7 +185,7 @@ After hearing the **presentation’s feedback**, I realized that my concept was 
 - Icon was inspired by [Amazon](https://www.amazon.com/)
 - Professor's help with challenges
 
-
+*Thank you for watching* 💕🥹🫶🏻
 
 
 
