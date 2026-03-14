@@ -37,8 +37,23 @@ I divided the product’s introduction page into two parts the same as Amazon do
 ## Design and Composition: Gestalt Theory
 
 I use **Similarity** and **Proximity** in designing the pages. For instance, the nav bars are all in blue colors, so they belong together. The white cards are in the same shape and structure, they also belong together.
-I use **Continuity** mainly because people always naturally follow this principle.  For example, the laugh-out-loud products are arranged in visual continuity in both vertical and horizontal ways. People know where they should look at first, and scroll through the page to explore more.
+Besides, I use **Continuity** mainly because people always naturally follow this principle.  For example, the laugh-out-loud products are arranged in visual continuity in both vertical and horizontal ways. People know where they should look at first, and scroll through the page to explore more.
 The **Figure/Ground** principle helps me to emphasize the important parts of my website. For example, the ads lay behind the recommendation cards. I also choose to use a light color background to create contrast between the simple background and the colorful images.
+
+---
+## Design and Composition: Web Interactions
+
+**Scrolling:** It is the basic element of my website. Because for a shopping website, people usually scroll their screen vertically, I only used the scrolling function to make my website look continuous and complete. 
+
+**Hovering:** Amazon does not have much hovering, because almost everything is interactive which will lead customers to another page. In this case, I use lots of hovering to make my viewers realize which information they can interact with. For example, if the link is clickable, once the mouse approaches the link, it will change the original color.
+
+![preview3](preview3.gif)
+
+**Linking:** It serves like a bridge between each of the separate pages. It helps me to direct my audiences to the laugh-out-loud product page I want them to look at surprisingly. However, instead of using the most common form of link, I used some icons and images as links. I also remove the underline of the links to make them look better.
+
+**Clicking:** Clicking on my website usually works together with linking. Somewhere, I made real button shapes to inform my viewer these are clickable. Once they  click them, they will be led to a totally new page. 
+
+![preview4](preview4.gif)
 
 
 
