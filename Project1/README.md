@@ -141,6 +141,27 @@ The other method that I applied to align boxes is giving the big box ```display:
 <img src="css3.png" width=50%>
 <img src="css4.png" width=50%>
 
+---
+## Technical Challenges 
+- One challenge is the SearchBar
+
+Because the searchBar can change its size when the screen size change, and only the length of the middle part will move. Therefore, the search part needs to have three components.
+Because the left one are texts, the middle one is an Input, and the right one is an image, it was very hard for me to make the three components align with each other although I tried to give them the same height. Besides, I was confused that there was always some space between each of the two components even I didn’t write anything about that. I tried different ways to solve this problem, but there is still a very little gap between the text part and the input part.
+
+![challenge1](challenge1.png)
+
+- The other technical challenge is the change of the screen size.
+
+When I resize the screen, some parts of the page will co-move with the size, while others just disappear. I think it might be because in some boxes I used ```position:absolute;```, or I gave the specific height and width of the boxes instead of a percentage. I’m still exploring how to make everything look great in different sizes of screen.
+
+![challenge2](challenge2.gif)
+---
+## Reflection and Future Development
+
+
+
+
+
 
 
 
