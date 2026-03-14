@@ -74,6 +74,7 @@ It contains 6 main ```div``` boxes
 All the cards share the same strucrure. Each of them is consist of a white background``` <div class="singleCardWrapper">```, a header such as ```<h3>Shop for your home essentials</h3>```, an image such as ```<img class="cookie" src="images/home.png" alt="">```, and a link ```<a class="discover" href="index3.html">Discover more in home</a>```
 
 ![card](card.png)![previewCard](previewCard.png)
+<img src="previewCard.png" width=30%>
 
 - ```<div class="long">``` is responsible for the other two wide cards behind the eights recommendation cards.
 
