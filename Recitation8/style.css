@@ -1,0 +1,184 @@
+body{
+    margin: 0;
+    /* background-color: rgb(240, 205, 211); */
+    animation: back 20s infinite;
+}
+
+@keyframes back{
+    0%{
+        background-color: black;
+    }
+    50%{
+        background-color: white;
+    }
+    80%{
+        background-color: gray;
+    }
+}
+
+.text{
+    position: absolute;
+    left: 25%;
+    top: 40%;
+    /* height: 50%;
+    width: 50%; */
+    font-family: fantasy;
+}
+
+
+@keyframes move{
+    0%{
+        color: rgb(255, 255, 255);
+    }
+    10%{
+        color: cadetblue;
+    }
+    30%{
+        font-size: 30px;
+    }
+    50%{
+        color: rgb(197, 209, 246);
+        font-size: 40px;
+    }
+    100%{
+        color: rgb(255, 255, 255);
+        font-size: 10px;
+    }
+}
+
+.Lorem:nth-child(even){
+    transform: translate(0px,0px);
+    animation: move 20s infinite;
+    display: inline-block;
+}
+
+.Lorem:nth-child(odd){
+    transform: translate(0px,0px);
+    animation:  move 10s infinite;
+    display: inline-block;
+}
+
+@keyframes fly{
+    0%{
+        transform: translate(0px,0px);
+    }
+    30%{
+        transform: translate(1200px,500px);
+    }
+    60%{
+        transform: translate(500px,-350px);
+    }
+    90%{
+        transform: translate(-400px,70px);
+    }
+}
+
+.first{
+    animation: fly 20s infinite;
+}
+
+@keyframes rotate1{
+    10%{
+        transform: rotate(10deg);
+        color: darkcyan;
+    }
+    30%{
+        transform: rotate(30deg);
+        color: rgb(62, 62, 107);
+    }
+    60%{
+        transform: rotate(60deg);
+        color: rgb(55, 99, 55);
+        font-size: 50px;
+    }
+    70%{
+        transform: rotate(180deg);
+        color: rgb(146, 218, 240);
+    }
+}
+
+.ipsum{
+    display: inline-block;
+    animation: rotate1 20s infinite;
+}
+
+.second{
+animation: fly 10s infinite;
+}
+
+.Alias:nth-child(odd){
+ animation: rotate1 10s infinite ;
+ display: inline-block;
+}
+
+.Alias:nth-child(even){
+animation: move 5s infinite;
+display: inline-block;
+}
+
+.nesciunt:nth-child(even){
+animation: move 10s infinite;
+display: inline-block;
+}
+
+.third{
+animation: fly 12s infinite;
+}
+
+.eos:nth-child(odd){
+ animation: rotate1 12s infinite ;
+ display: inline-block;
+}
+
+.eos:nth-child(even){
+animation: move 6s infinite;
+display: inline-block;
+} 
+
+@keyframes fly1{
+    0%{
+        transform: translate(0px,0px);
+    }
+    30%{
+        transform: translate(-400px,200px);
+    }
+    60%{
+        transform: translate(500px,-350px);
+    }
+    90%{
+        transform: translate(1000px,500px)
+    }
+}
+
+.fourth{
+    animation: fly1 10s infinite;
+}
+
+.placeat:nth-child(odd){
+ animation: rotate1 10s infinite ;
+ display: inline-block;
+}
+
+.placeat:nth-child(even){
+animation: move 5s infinite;
+display: inline-block;
+}
+
+.fifth{
+    animation: fly1 20s infinite;
+}
+
+.eveniet:nth-child(odd){
+    animation: move 10s infinite;
+    display: inline-block;
+}
+
+.eveniet:nth-child(even){
+    animation: rotate1 20s infinite;
+    display: inline-block;
+}
+
+.tempore:nth-child(odd){
+    animation: rotate1 20s infinite;
+    display: inline-block;
+}
