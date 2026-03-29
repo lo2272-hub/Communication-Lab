@@ -66,7 +66,7 @@ function backgroundChange(){
 
 function instruction(){
     let ins = document.createElement('p');
-    ins.innerHTML = 'A cat want to chase rats, but ... Anyway, click the rat first'
+    ins.innerHTML = 'A cat want to catch rats, but ... Anyway, click the rat first'
     ins.classList.add("instruction");
     document.querySelector(".game").append(ins);
 }

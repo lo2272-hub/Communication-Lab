@@ -21,6 +21,9 @@ I mainly learn html and css right now. But I'm looking forward to exploring more
 
 ![project](shanzhai.png)
 
+![A cat and Rats](catandrats.png)
+- [A cat and Rats](https://lo2272-hub.github.io/Communication-Lab/Recitation9/)
+
 Below is me  ૮꒰ ྀི˶• ๑ •˶ ྀི꒱ა
 
 ![hi](me.JPG)
