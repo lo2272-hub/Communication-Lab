@@ -20,9 +20,9 @@ I mainly learn html and css right now. But I'm looking forward to exploring more
 - [Shanzhai Website](https://lo2272-hub.github.io/Communication-Lab/Project1)
 
 ![project](shanzhai.png)
-- [A cat and Rats](https://lo2272-hub.github.io/Communication-Lab/Recitation9/)
+- [A Cat and Rats](https://lo2272-hub.github.io/Communication-Lab/Recitation9/)
 
-![A cat and Rats](catandrats.png)
+![A Cat and Rats](catandrats.png)
 
 
 Below is me  ૮꒰ ྀི˶• ๑ •˶ ྀི꒱ა
