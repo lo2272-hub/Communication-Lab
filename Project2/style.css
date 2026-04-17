@@ -1,0 +1,67 @@
+body {
+    background-color: rgb(178, 208, 178);
+}
+
+.reference {
+    text-align: center;
+    position: relative;
+    height: 100vh;
+}
+
+.adapt {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30%;
+    color: white;
+    font-family: "Playwrite IE", cursive;
+    font-size: 30px;
+    text-shadow: 3px 3px 8px rgba(255, 253, 253, 0.4);
+    display: inline-block;
+    width: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: increaseWidth 13s forwards steps(130, end);
+}
+
+.shall {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40%;
+    color: white;
+    font-family: "Playwrite IE", cursive;
+    font-size: 30px;
+    text-shadow: 3px 3px 8px rgba(255, 253, 253, 0.4);
+    display: inline-block;
+    width: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: increaseWidth 12s forwards steps(130, end);
+}
+
+.Shakespeare {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    color: white;
+    font-family: "Playwrite IE", cursive;
+    font-size: 30px;
+    text-shadow: 3px 3px 8px rgba(255, 253, 253, 0.4);
+    display: inline-block;
+    width: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: increaseWidth 20s forwards steps(130, end);
+}
+
+@keyframes increaseWidth {
+    from {
+        width: 0px;
+    }
+
+    to {
+        width: 650px;
+    }
+}

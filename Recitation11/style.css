@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    background:linear-gradient(to right,lightpink,lightblue);
+    height: 100vh;
+    display: flex;
+    justify-content: center
+}
+.wrapper{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.clock{
+   height: 200px;
+   width: 200px;
+   border-radius: 20px;
+   background-color: white;
+   display: inline-block;
+   
+}
+
+.clockh1,.clockh2,.clockm1,.clockm2,.clocks1,.clocks2{
+   height: 200px;
+   width: 200px;
+   border-radius: 20px;
+   background-color: white;
+   display: inline-block;
+   
+}
+
