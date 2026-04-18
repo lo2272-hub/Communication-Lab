@@ -11,14 +11,6 @@ body{
     align-items: center;
     justify-content: center;
 }
-.clock{
-   height: 200px;
-   width: 200px;
-   border-radius: 20px;
-   background-color: white;
-   display: inline-block;
-   
-}
 
 .clockh1,.clockh2,.clockm1,.clockm2,.clocks1,.clocks2{
    height: 200px;
@@ -26,6 +18,6 @@ body{
    border-radius: 20px;
    background-color: white;
    display: inline-block;
-   
+   filter:drop-shadow(gray 0 10px 10px);
 }
 

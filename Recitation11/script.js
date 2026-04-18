@@ -18,7 +18,7 @@ function getTheTime(){
     changeColor(h2,clockh2);
     let clockm1 = document.querySelector(".clockm1");
     changeColor(m1,clockm1);
-     let clockm2 = document.querySelector(".clockm2");
+    let clockm2 = document.querySelector(".clockm2");
     changeColor(m2,clockm2);
     let clocks1 = document.querySelector(".clocks1");
     changeColor(s1,clocks1);
@@ -35,27 +35,27 @@ function changeColor(h1,element){
     }else if(h1 == 2){
         console.log("number is 2");
         element.style.backgroundColor = "#FF2A00"
-    }else if(h1 == 3){
-        console.log("number is 3");
-        element.style.backgroundColor = "#FF7A00"
-    }else if(h1 == 4){
-        console.log("number is 4");
-        element.style.backgroundColor = "#FFB200"
-    }else if(h1 == 5){
-        console.log("number is 5");
-        element.style.backgroundColor = "#FFFF00"
-    }else if(h1 == 6){
-        console.log("number is 6");
-        element.style.backgroundColor = "#A6FF00"
-    }else if(h1 == 7){
-        console.log("number is 7");
-        element.style.backgroundColor = "#00FF2A"
-    }else if(h1 == 8){
-        console.log("number is 8");
-        element.style.backgroundColor = "#00E5FF"
-    }else if(h1 == 9){
-        console.log("number is 9");
-        element.style.backgroundColor = "#7A00FF"
+    // }else if(h1 == 3){
+    //     console.log("number is 3");
+    //     element.style.backgroundColor = "#FF7A00"
+    // }else if(h1 == 4){
+    //     console.log("number is 4");
+    //     element.style.backgroundColor = "#FFB200"
+    // }else if(h1 == 5){
+    //     console.log("number is 5");
+    //     element.style.backgroundColor = "#FFFF00"
+    // }else if(h1 == 6){
+    //     console.log("number is 6");
+    //     element.style.backgroundColor = "#A6FF00"
+    // }else if(h1 == 7){
+    //     console.log("number is 7");
+    //     element.style.backgroundColor = "#00FF2A"
+    // }else if(h1 == 8){
+    //     console.log("number is 8");
+    //     element.style.backgroundColor = "#00E5FF"
+    // }else if(h1 == 9){
+    //     console.log("number is 9");
+    //     element.style.backgroundColor = "#7A00FF"
     }else if(h1  == 0){
         console.log("number is 0");
         element.style.backgroundColor = "white";
@@ -115,22 +115,11 @@ function changeColor(m1,element){
     }else if(m1 == 6){
         console.log("number is 6");
         element.style.backgroundColor = "#A6FF00"
-    }else if(m1 == 7){
-        console.log("number is 7");
-        element.style.backgroundColor = "#00FF2A"
-    }else if(m1 == 8){
-        console.log("number is 8");
-        element.style.backgroundColor = "#00E5FF"
-    }else if(m1 == 9){
-        console.log("number is 9");
-        element.style.backgroundColor = "#7A00FF"
     }else if(m1 == 0){
         console.log("number is 0");
         element.style.backgroundColor = "white";
     }
 }
-
-
 
 function changeColor(m2,element){
     if(m2 == 1){
