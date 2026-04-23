@@ -39,5 +39,3 @@ function randomPosition(element){
 heatP.forEach(randomPosition);
 
 
-
-
