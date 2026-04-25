@@ -8,13 +8,32 @@ body {
     text-align: center;
     position: relative;
     height: 100vh;
+    width: 100%;
     background: linear-gradient(
         to bottom,
         rgb(178, 208, 178) 55%,
         white 100%);
+    display: flex;
 }
 
 .adapt {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20%;
+    color: white;
+    font-family: "Playwrite IE", cursive;
+    font-size: 30px;
+    text-shadow: 3px 3px 8px rgba(255, 253, 253, 0.4);
+    display: inline-block;
+    width: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: increaseWidth 13s forwards steps(130, end);
+    z-index: 1;
+}
+
+.shall {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -27,10 +46,11 @@ body {
     width: 5px;
     white-space: nowrap;
     overflow: hidden;
-    animation: increaseWidth 13s forwards steps(130, end);
+    animation: increaseWidth 12s forwards steps(130, end);
+    z-index: 1;
 }
 
-.shall {
+.Shakespeare {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -43,23 +63,8 @@ body {
     width: 5px;
     white-space: nowrap;
     overflow: hidden;
-    animation: increaseWidth 12s forwards steps(130, end);
-}
-
-.Shakespeare {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 50%;
-    color: white;
-    font-family: "Playwrite IE", cursive;
-    font-size: 30px;
-    text-shadow: 3px 3px 8px rgba(255, 253, 253, 0.4);
-    display: inline-block;
-    width: 5px;
-    white-space: nowrap;
-    overflow: hidden;
     animation: increaseWidth 20s forwards steps(130, end);
+    z-index: 1;
 }
 
 @keyframes increaseWidth {
@@ -80,3 +85,15 @@ body {
     font-size: 40px;
     position: relative;
 }
+
+.reference img{
+    height: 490px;
+    /* height: 60%; */
+    opacity: 0.3;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+
+
