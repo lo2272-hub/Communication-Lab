@@ -4,6 +4,11 @@ body {
     
 }
 
+.canvas{
+    height:600vh;
+    position: relative;
+}
+
 .reference {
     text-align: center;
     position: relative;
@@ -77,13 +82,51 @@ body {
     }
 }
 
+.move{
+    position: relative;
+    top: -200px;
+    left: 100px;
+}
+.butterfly{
+    height: auto;
+    width: 100px;
+    opacity: 0.5;
+    animation: fly 10s linear 1;
+}
+
+@keyframes fly{
+    0%{
+        transform: translate(0px,0px);
+    }
+    20%{
+        transform: translate(100px,100px);
+    }
+    40%{
+        transform: translate(500px,-100px);
+    }
+    60%{
+        transform: translate(800px,100px);
+    }
+    80%{
+        transform: translate(1000px,-100px);
+    }
+    100%{
+        transform: translate(1200px,100px);
+    }
+}
+
 .heat{
     margin: 0;
     height:200vh;
-    background-color: white;
+    background: linear-gradient(
+        to bottom,
+        white 60%,
+        black 100%);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 40px;
     position: relative;
+    position: sticky;
+    top:0px;
 }
 
 .reference img{
@@ -96,4 +139,18 @@ body {
     z-index: 0;
 }
 
+.heatP {
+    transition: filter 0.8s ease;
+}
 
+.seasons{
+    background: black;
+    height: 300vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seasons img{
+    width: 75%;
+}
