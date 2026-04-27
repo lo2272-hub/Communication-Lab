@@ -5,11 +5,19 @@ let seasons = document.querySelector(".seasons");
 
 let butterfly = document.querySelector(".butterfly");
 
-butterfly.addEventListener("click",moveButterfly);
+butterfly.addEventListener("click", moveButterfly);
 
-function moveButterfly(){
-butterfly.classList.toggle("fly");
+function moveButterfly() {
+    butterfly.classList.toggle("fly");
 }
+
+let shall = document.querySelector(".shall");
+let Shakespeare = document.querySelector(".Shakespeare");
+butterfly.addEventListener("click", function () {
+    shall.classList.add("type");
+    Shakespeare.classList.add("typeDelay");
+});
+
 
 function getScrollPercentage() {
     // how many pixels have we scrolled yet?
@@ -25,36 +33,37 @@ function getScrollPercentage() {
     let possibleScrollSpace = pageHeight - windowHeight;
 
     // console.log(scrolledAlready, possibleScrollSpace);
-    let percentage = (scrolledAlready / possibleScrollSpace)*100;
+    let percentage = (scrolledAlready / possibleScrollSpace) * 100;
     return percentage;
 }
 
-function heatWasScrolled(){
+function heatWasScrolled() {
     let percentage = getScrollPercentage();
-    console.log("percentage",percentage);
-    if(percentage<13){
+    console.log("percentage", percentage);
+    if (percentage < 7) {
         heatP.forEach(blurTheText);
-    }else if(13<=percentage && percentage<20){
+    } else if (7 <= percentage && percentage < 13) {
         heatP.forEach(clearBlur);
-    }else if(20<=percentage && percentage<30){
+    } else if (13 <= percentage && percentage < 20) {
         heatP.forEach(blurTheText);
-    }else if(30<=percentage && percentage<35){
+    } else if (20 <= percentage && percentage < 25) {
         heatP.forEach(clearBlur);
-    }else if(35<=percentage && percentage<40){
+    } else if (25 <= percentage && percentage < 28) {
         heatP.forEach(blurTheText);
-    }else if(40<=percentage && percentage<50){
+    } else if (28 <= percentage && percentage < 30) {
         heatP.forEach(clearBlur);
-    }else if(percentage>=50){
+    } else if (percentage > 30) {
         heatP.forEach(blurTheText);
     }
 }
 
 
 
-window.addEventListener("scroll",heatWasScrolled);
+
+window.addEventListener("scroll", heatWasScrolled);
 // window.addEventListener("scroll",findSummer);
 
-function blurTheText(element){
+function blurTheText(element) {
     console.log("the text is blur");
     element.style.filter = "blur(2px) brightness(1.4)";
 }
@@ -64,22 +73,31 @@ function clearBlur(element) {
 }
 
 let summerSound = document.querySelector("#summerSound");
-document.querySelector(".butterfly").addEventListener("click",function(){
-summerSound.play();
+document.querySelector(".butterfly").addEventListener("click", function () {
+    summerSound.play();
 });
 
 
-function randomPosition(element){
+function randomPosition(element) {
     element.style.position = "absolute";
     element.style.left = Math.random() * (window.innerWidth) + "px";
     element.style.top = Math.random() * (window.innerHeight) + "px";
-    let randomSize = Math.random()* 3;
+    let randomSize = Math.random() * 3;
     element.style.transform = "scale(" + randomSize + ")";
 }
 
 heatP.forEach(randomPosition);
-document.querySelector(".heat:nth-child(1)").addEventListener("mouseover",randomPosition);
-document.querySelector(".heat:nth-child(2)").addEventListener("mouseover",randomPosition);
+
+function newPosition(eventInfo) {
+    let randomX = Math.random() * 200 - 100;
+    let randomY = Math.random() * 200 - 100;
+    eventInfo.target.style.transform = "translate(" + randomX + "px," + randomY + "px)";
+}
+function toNewPosition(element) {
+    element.addEventListener("mouseover", newPosition);
+}
+
+heatP.forEach(toNewPosition);
 
 // function addGo(){
 // let go = document.createElement("div");
@@ -94,10 +112,61 @@ document.querySelector(".heat:nth-child(2)").addEventListener("mouseover",random
 //     if(percentage==85){
 //         addGo();
 //     }
-    
-// }
+
+
+function rotateSummer() {
+    let percentage = getScrollPercentage();
+    if (percentage >= 40 && percentage <= 80) {
+        let summerScale = (percentage - 40) / 40;
+        let angle = summerScale * 1250;
+        document.querySelector(".summer img").style.transform =
+            "rotate(" + angle + "deg)";
+    }
+}
+window.addEventListener("scroll", rotateSummer);
 
 
 
+let poem = document.querySelector(".poem");
+let hot = document.createElement("p");
+hot.innerText="Sometimes the sun is too hot, And often its golden face is dimmed."
+let short = document.createElement("p");
+short.innerText="Rough winds shake the beloved buds of May, And summer is far too short."
+let fade = document.createElement("p");
+fade.innerText="Everything beautiful eventually fades, By chance or nature's changing course."
 
+function addHot(){
+let percentage = getScrollPercentage();
+if(percentage >= 7 && percentage <=40){
+   poem.append(hot); 
+   console.log("add hot");
+} else {
+   hot.remove();
+   console.log("remove hot");
+}
+}
+window.addEventListener("scroll", addHot);
 
+function addShort(){
+let percentage = getScrollPercentage();
+if (percentage >=43 && percentage <= 50 ){
+    poem.append(short);
+    console.log("add short") ;
+}else{
+    short.remove();
+    console.log("remove short");
+}
+}
+window.addEventListener("scroll", addShort);
+
+function addFade(){
+let percentage = getScrollPercentage();
+if (percentage >=55 && percentage <= 60 ){
+    poem.append(fade);
+    console.log("add fade") ;
+}else{
+    fade.remove();
+    console.log("remove fade");
+}
+}
+window.addEventListener("scroll", addFade);

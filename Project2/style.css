@@ -1,11 +1,23 @@
 body {
     margin: 0;
     /* background: linear-gradient(rgb(178, 208, 178),white); */
-    
+
 }
 
-.canvas{
-    height:600vh;
+.poem p{
+    z-index: 10;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    font-family: "Indie Flower", cursive;
+    font-size: 50px;
+    color: rgb(44, 100, 80);
+
+}
+
+.canvas {
+    height: 600vh;
     position: relative;
 }
 
@@ -14,28 +26,20 @@ body {
     position: relative;
     height: 100vh;
     width: 100%;
-    background: linear-gradient(
-        to bottom,
-        rgb(178, 208, 178) 55%,
-        white 100%);
+    background: linear-gradient(to bottom,
+            rgb(178, 208, 178) 55%,
+            white 100%);
     display: flex;
 }
 
-.adapt {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 20%;
-    color: white;
-    font-family: "Playwrite IE", cursive;
-    font-size: 30px;
-    text-shadow: 3px 3px 8px rgba(255, 253, 253, 0.4);
+.reference img {
+    width: 100%;
+    height: 85%;
+    opacity: 0.3;
     display: inline-block;
-    width: 5px;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: increaseWidth 13s forwards steps(130, end);
-    z-index: 1;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
 }
 
 .shall {
@@ -44,16 +48,20 @@ body {
     transform: translateX(-50%);
     top: 30%;
     color: white;
-    font-family: "Playwrite IE", cursive;
+    /* font-family: "Playwrite IE", cursive; */
+    font-family: "Special Elite", system-ui;
+
     font-size: 30px;
     text-shadow: 3px 3px 8px rgba(255, 253, 253, 0.4);
     display: inline-block;
     width: 5px;
     white-space: nowrap;
     overflow: hidden;
-    animation: increaseWidth 12s forwards steps(130, end);
+    /* animation: increaseWidth 4s forwards steps(25, end); */
     z-index: 1;
 }
+
+
 
 .Shakespeare {
     position: absolute;
@@ -61,15 +69,25 @@ body {
     transform: translateX(-50%);
     top: 40%;
     color: white;
-    font-family: "Playwrite IE", cursive;
+    font-family: "Special Elite", system-ui;
     font-size: 30px;
     text-shadow: 3px 3px 8px rgba(255, 253, 253, 0.4);
     display: inline-block;
-    width: 5px;
+    width: 0px;
     white-space: nowrap;
     overflow: hidden;
-    animation: increaseWidth 20s forwards steps(130, end);
+    /* animation: increaseWidth 4s forwards steps(25, end);
+    animation-delay: 4s; */
     z-index: 1;
+}
+
+.type {
+    animation: increaseWidth 4s forwards steps(25, end);
+}
+
+.typeDelay {
+    animation: increaseWidth 4s forwards steps(25, end);
+    animation-delay: 4s;
 }
 
 @keyframes increaseWidth {
@@ -82,75 +100,142 @@ body {
     }
 }
 
-.move{
+.move {
     position: relative;
     top: -200px;
     left: 100px;
 }
-.butterfly{
+
+.butterfly {
     height: auto;
     width: 100px;
     opacity: 0.5;
-    animation: fly 10s linear 1;
+    animation: fly 20s linear 1 forwards;
 }
 
-@keyframes fly{
-    0%{
-        transform: translate(0px,0px);
+@keyframes fly {
+    0% {
+        transform: translate(0px, -100px);
     }
-    20%{
-        transform: translate(100px,100px);
+
+    8% {
+        transform: translate(80px, -40px);
     }
-    40%{
-        transform: translate(500px,-100px);
+
+    15% {
+        transform: translate(250px, -120px);
     }
-    60%{
-        transform: translate(800px,100px);
+
+    22% {
+        transform: translate(500px, -300px);
     }
-    80%{
-        transform: translate(1000px,-100px);
+
+    30% {
+        transform: translate(700px, -80px);
     }
-    100%{
-        transform: translate(1200px,100px);
+
+    38% {
+        transform: translate(900px, -180px);
+    }
+
+    45% {
+        transform: translate(1100px, -40px);
+    }
+
+    50% {
+        transform: translate(1200px, 0px);
+    }
+
+
+    58% {
+        transform: translate(1050px, -200px);
+    }
+
+    66% {
+        transform: translate(850px, -350px);
+    }
+
+    74% {
+        transform: translate(650px, -450px);
+    }
+
+    82% {
+        transform: translate(500px, -550px);
+    }
+
+    90% {
+        transform: translate(350px, -600px);
+    }
+
+    96% {
+        transform: translate(200px, -420px);
+    }
+
+    100% {
+        transform: translate(100px, -300px);
     }
 }
 
-.heat{
+.heat {
     margin: 0;
-    height:200vh;
-    background: linear-gradient(
-        to bottom,
-        white 60%,
-        black 100%);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 200vh;
+    background: linear-gradient(to bottom,
+            white 60%,
+            black 100%);
+    font-family: "Special Elite", system-ui;
     font-size: 40px;
     position: relative;
     position: sticky;
-    top:0px;
+    top: 0px;
 }
 
-.reference img{
-    height: 490px;
-    /* height: 60%; */
-    opacity: 0.3;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    z-index: 0;
-}
+
 
 .heatP {
-    transition: filter 0.8s ease;
+    transition: filter 1s ease,transform 1s ease;
 }
 
-.seasons{
+.wrapper{
+    height: 1000vh;
+    position: relative;
+}
+
+.seasons {
     background: black;
     height: 300vh;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
+     position: relative;
+    position: sticky;
+    top: 0px;
+}
+.summer{
+    width: 100%;
+}
+.summer img {
+    width: 80%;
+    transform-origin: center center;
 }
 
-.seasons img{
-    width: 75%;
+.black1{
+    /* border: 1px solid white; */
+    height:200vh;
+    width: 50%;
+    left: 40%;
+    z-index: 1;
+    position: absolute;
+    background-color: black;
+    display: flex
+}
+
+.black2{
+    /* border: 1px solid pink; */
+    height: 100vh;
+    width: 100%;
+    top: 23%;
+    z-index: 1;
+    position: absolute;
+    background-color: black;
+    display: flex
 }

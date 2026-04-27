@@ -26,9 +26,12 @@ function scaleParagraph(){
     }
 
     let windowWidth = window.innerWidth;
-    let bunny_x_max = windowWidth - 100;
-    let bunny_x = bunny_x_max * (percentage/100);
-    document.querySelector("#bunny").style.transform ="translate(" + bunny_x + "px, 50px)";
+    // let bunny_x_max = windowWidth - 100;
+    // let bunny_x = bunny_x_max * (percentage/100);
+    // document.querySelector("#bunny").style.transform ="translate(" + bunny_x + "px, 50px)";
+    let bunny_angle_max = 360;
+    let bunny_angle = bunny_angle_max * (percentage/100);
+    document.querySelector("#bunny").style.transform ="rotate("+bunny_angle +"0deg)";
 }
 
 window.addEventListener("scroll",scaleParagraph);
