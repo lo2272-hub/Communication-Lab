@@ -118,7 +118,7 @@ function rotateSummer() {
     let percentage = getScrollPercentage();
     if (percentage >= 40 && percentage <= 80) {
         let summerScale = (percentage - 40) / 40;
-        let angle = summerScale * 1250;
+        let angle = summerScale * 1200;
         document.querySelector(".summer img").style.transform =
             "rotate(" + angle + "deg)";
     }
@@ -134,10 +134,37 @@ let short = document.createElement("p");
 short.innerText="Rough winds shake the beloved buds of May, And summer is far too short."
 let fade = document.createElement("p");
 fade.innerText="Everything beautiful eventually fades, By chance or nature's changing course."
+let catchSummer = document.createElement("p");
+catchSummer.innerText="Keep scrolling and catch the summer";
+let catchButterfly = document.createElement("p");
+catchButterfly.innerText = "Catch the flying butterfly and begin your summer day";
+let wheel = document.createElement("p");
+wheel.innerText="No summer stays where the days continue to turn."
+let flower = document.createElement("p");
+flower.innerText = "Do you see the lovely flower?"
+hot.classList.add("hot");
+short.classList.add("short");
+fade.classList.add("fade");
+catchSummer.classList.add("catchSummer");
+catchButterfly.classList.add("catchButterfly");
+wheel.classList.add("wheel");
+flower.classList.add("flower");
+
+function addCatchButterfly(){
+let percentage = getScrollPercentage();
+if(percentage >= 0.5 && percentage <=1.5){
+   poem.append(catchButterfly); 
+   console.log("add catchButterfly");
+} else {
+   catchButterfly.remove();
+   console.log("remove catchButterfly");
+}
+}
+window.addEventListener("scroll", addCatchButterfly);
 
 function addHot(){
 let percentage = getScrollPercentage();
-if(percentage >= 7 && percentage <=40){
+if(percentage >= 6 && percentage <=34.5){
    poem.append(hot); 
    console.log("add hot");
 } else {
@@ -146,6 +173,19 @@ if(percentage >= 7 && percentage <=40){
 }
 }
 window.addEventListener("scroll", addHot);
+
+function addWheel(){
+let percentage = getScrollPercentage();
+if(percentage >= 37 && percentage <=40){
+   poem.append(wheel); 
+   console.log("add wheel");
+} else {
+   wheel.remove();
+   console.log("remove wheel");
+}
+}
+window.addEventListener("scroll", addWheel);
+
 
 function addShort(){
 let percentage = getScrollPercentage();
@@ -161,7 +201,7 @@ window.addEventListener("scroll", addShort);
 
 function addFade(){
 let percentage = getScrollPercentage();
-if (percentage >=55 && percentage <= 60 ){
+if (percentage >=55 && percentage <= 62 ){
     poem.append(fade);
     console.log("add fade") ;
 }else{
@@ -170,3 +210,27 @@ if (percentage >=55 && percentage <= 60 ){
 }
 }
 window.addEventListener("scroll", addFade);
+
+function addCatchSummer(){
+let percentage = getScrollPercentage();
+if (percentage >=67 && percentage <= 75 ){
+    poem.append(catchSummer);
+    console.log("add catchSummer") ;
+}else{
+    catchSummer.remove();
+    console.log("remove catchSummer");
+}
+}
+window.addEventListener("scroll", addCatchSummer);
+
+function addFlower(){
+let percentage = getScrollPercentage();
+if (percentage >=79 && percentage <= 87 ){
+    poem.append(flower);
+    console.log("add flower") ;
+}else{
+    flower.remove();
+    console.log("remove flower");
+}
+}
+window.addEventListener("scroll", addFlower);

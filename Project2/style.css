@@ -7,13 +7,51 @@ body {
 .poem p{
     z-index: 10;
     position:fixed;
-    top: 50%;
-    left: 50%;
     margin: 0;
     font-family: "Indie Flower", cursive;
     font-size: 50px;
-    color: rgb(44, 100, 80);
+}
 
+.catchButterfly{
+    top:80%;
+    left:12%;
+}
+
+.hot{
+    top: 50%;
+    left:2%;
+    color: rgb(226, 104, 104);
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.wheel{
+    top: 50%;
+    left: 12%;
+    color: darksalmon;
+}
+
+.short{
+    top: 50%;
+    left: 50%;
+    color: rgb(44, 100, 80);
+}
+
+.fade{
+    top: 50%;
+    left: 50%;
+    color: rgb(149, 246, 214);
+}
+
+.catchSummer{
+    top:50%;
+    left:50%;
+    color: lightblue;
+}
+
+.flower{
+    top:50%;
+    left:50%;
+    color: white;
 }
 
 .canvas {
@@ -222,7 +260,7 @@ body {
     /* border: 1px solid white; */
     height:200vh;
     width: 50%;
-    left: 40%;
+    left: 39.5%;
     z-index: 1;
     position: absolute;
     background-color: black;
