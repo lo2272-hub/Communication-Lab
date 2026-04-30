@@ -99,20 +99,6 @@ function toNewPosition(element) {
 
 heatP.forEach(toNewPosition);
 
-// function addGo(){
-// let go = document.createElement("div");
-// go.innerText="go and find the summer";
-// go.style.color="white";
-// seasons.append(go);
-// }
-
-// function findSummer(){
-//    let percentage = getScrollPercentage();
-//     console.log("percentage",percentage);
-//     if(percentage==85){
-//         addGo();
-//     }
-
 
 function rotateSummer() {
     let percentage = getScrollPercentage();
@@ -135,13 +121,14 @@ short.innerText = "Rough winds shake the beloved buds of May, And summer is far 
 let fade = document.createElement("p");
 fade.innerText = "Everything beautiful eventually fades, By chance or nature's changing course."
 let catchSummer = document.createElement("p");
-catchSummer.innerText = "Keep scrolling and catch the summer";
+catchSummer.innerText = "Keep scrolling";
 let catchButterfly = document.createElement("p");
 catchButterfly.innerText = "Catch the flying butterfly and begin your summer day";
 let wheel = document.createElement("p");
 wheel.innerText = "No summer stays where the days continue to turn."
-let flower = document.createElement("p");
-flower.innerText = "Do you see the lovely flower?"
+let flower = document.createElement("a");
+flower.innerText = "All seasons pass. Only summer glows."
+flower.href = "index2.html";
 hot.classList.add("hot");
 short.classList.add("short");
 fade.classList.add("fade");
@@ -165,7 +152,7 @@ poem.append(catchButterfly);
 
 function addHot() {
     let percentage = getScrollPercentage();
-    if (percentage >= 1.5 && percentage <= 28) {
+    if (percentage >= 1.5 && percentage <= 20) {
         poem.append(hot);
         console.log("add hot");
     } else {
@@ -177,7 +164,7 @@ window.addEventListener("scroll", addHot);
 
 function addWheel() {
     let percentage = getScrollPercentage();
-    if (percentage >= 30 && percentage <= 40) {
+    if (percentage >= 25 && percentage <= 37) {
         poem.append(wheel);
         console.log("add wheel");
     } else {
@@ -190,7 +177,7 @@ window.addEventListener("scroll", addWheel);
 
 function addShort() {
     let percentage = getScrollPercentage();
-    if (percentage >= 43 && percentage <= 50) {
+    if (percentage >= 43 && percentage <= 49) {
         poem.append(short);
         console.log("add short");
     } else {
@@ -202,7 +189,7 @@ window.addEventListener("scroll", addShort);
 
 function addFade() {
     let percentage = getScrollPercentage();
-    if (percentage >= 55 && percentage <= 62) {
+    if (percentage >= 53 && percentage <= 59) {
         poem.append(fade);
         console.log("add fade");
     } else {
@@ -224,17 +211,17 @@ function addCatchSummer() {
 }
 window.addEventListener("scroll", addCatchSummer);
 
-// function addFlower(){
-// let percentage = getScrollPercentage();
-// if (percentage >=79 && percentage <= 84 ){
-//     poem.append(flower);
-//     console.log("add flower") ;
-// }else{
-//     flower.remove();
-//     console.log("remove flower");
-// }
-// }
-// window.addEventListener("scroll", addFlower);
+function addFlower(){
+let percentage = getScrollPercentage();
+if (percentage >=99 && percentage <= 100){
+    poem.append(flower);
+    console.log("add flower") ;
+}else{
+    flower.remove();
+    console.log("remove flower");
+}
+}
+window.addEventListener("scroll", addFlower);
 
 //seasons
 function windowWasScrolled() {
@@ -243,8 +230,8 @@ function windowWasScrolled() {
     console.log("percentage", percentage);
 
     // target 16-45%
-    let g1_start = 70;
-    let g1_end = 90;
+    let g1_start = 61;
+    let g1_end = 83;
     if (percentage > g1_start && percentage < g1_end) {
         let performanceLength = g1_end - g1_start;
         //                              0    -   38        /    38 
@@ -271,7 +258,7 @@ function windowWasScrolled() {
 
 
 
-    let g2_start = 90;
+    let g2_start = 83;
     let g2_end = 97;
     if (percentage > g2_start && percentage < g2_end) {
         let performanceLength = g2_end - g2_start;
@@ -307,8 +294,8 @@ if (percentage > g3_start && percentage < g3_end) {
     let numFrames = 10;
     let currentImageNumber = Math.floor(animationPercentage * numFrames);
     // console.log("show image number:", currentImageNumber)
-    let frameSource = "images/season" + currentImageNumber + ".png";
-    // console.log("current frame source", frameSource)
+ let frameSource = "images/season" + (currentImageNumber + 1) + ".png";
+     // console.log("current frame source", frameSource)
 
     // change image
     let imgElement = document.querySelector(".gifWrapper3 img");

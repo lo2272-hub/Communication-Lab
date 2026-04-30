@@ -1,9 +1,45 @@
 body{
    margin: 0px;
-   background: linear-gradient(rgb(4, 25, 43),lightblue);
-   height: 200vh;
+   height: 150vh;
 }
 
-.firework img{
+.paper{
+   position: absolute;
+   top: 0px;
+   left: 0px;
    width: 100%;
+   height: auto;
+   z-index: -1;
 }
+
+.paper img{
+   width: 100%;
+   height: auto;
+}
+
+.watermelon img{
+   width: 200px;
+   height: 200px;
+   position: absolute;
+   top: 30%;
+   left: 22%;
+   opacity: 0.8;
+   z-index: 2;
+   transition: opacity 1s ease;
+}
+
+.watermelon img:hover{
+   opacity: 0;
+   transition: opacity 1s ease;
+}
+
+.watermelon p{
+   color: black;
+    position: absolute;
+   top: 25%;
+   left: 20%;
+   opacity: 0.8;
+   font-size: 20px;
+   z-index: 1;
+}
+

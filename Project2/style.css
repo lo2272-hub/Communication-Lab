@@ -12,11 +12,23 @@ body {
     font-size: 50px;
 }
 
+.poem a {
+    z-index: 10;
+    position: fixed;
+    margin: 0;
+    font-family: "Indie Flower", cursive;
+    font-size: 50px;
+}
+
+.poem a:hover{
+   color: rgb(225, 224, 255);
+}
+
 .catchButterfly {
     top: 88%;
     left: 12%;
     opacity: 0;
-    animation: butterflyLife 10s ease forwards;
+    animation: butterflyLife 8s ease forwards;
 }
 
 @keyframes butterflyLife {
@@ -67,14 +79,14 @@ body {
 }
 
 .catchSummer {
-    top: 50%;
-    left: 25%;
+    top: 38%;
+    left: 40%;
     color: lightblue;
 }
 
 .flower {
-    top: 50%;
-    left: 50%;
+    top: 38%;
+    left: 23%;
     color: white;
 }
 
@@ -333,10 +345,10 @@ body {
 
 
 .stickyWrapper{
-    height: 300vh;
+    height: 500vh;
     width: 100%;
     /* outline: 4px dotted white; */
-    background-color: black;
+    background-color:black;
     
 }
 
@@ -348,7 +360,7 @@ body {
 
 
 .stickyWrapper2{
-    height: 150vh;
+    height: 300vh;
     width: 100%;
     /* outline: 4px dotted white; */
     background-color: black;
@@ -361,7 +373,7 @@ body {
 }
 
 .stickyWrapper3{
-    height: 60vh;
+    height: 100vh;
     width: 100%;
     /* outline: 4px dotted white; */
     background-color: black;
@@ -378,7 +390,5 @@ body {
 }
 
 .bw{
-
     filter: grayscale(100%);
-
 }
