@@ -1,0 +1,43 @@
+.windowHeight{
+    height: 100vh;
+    width: 100%;
+    outline: 4px dotted black;
+    background-color: aquamarine;
+}
+
+.stickyWrapper{
+    height: 300vh;
+    width: 100%;
+    outline: 4px dotted black;
+    background-color: rgb(134, 113, 232);
+}
+
+.gifWrapper{
+    position: sticky;
+    top: 50vh;
+}
+
+
+.stickyWrapper2{
+    height: 150vh;
+    width: 100%;
+    outline: 4px dotted black;
+    background-color: rgb(224, 243, 54);
+}
+
+.gifWrapper2{
+    position: sticky;
+    top: 50vh;
+}
+
+.stickyWrapper3{
+    height: 60vh;
+    width: 100%;
+    outline: 4px dotted black;
+    background-color: rgb(224, 243, 54);
+}
+
+.gifWrapper3{
+    position: sticky;
+    top: 50vh;
+}

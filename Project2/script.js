@@ -65,7 +65,7 @@ window.addEventListener("scroll", heatWasScrolled);
 
 function blurTheText(element) {
     console.log("the text is blur");
-    element.style.filter = "blur(2px) brightness(1.4)";
+    element.style.filter = "blur(3px) brightness(1.4)";
 }
 
 function clearBlur(element) {
@@ -129,17 +129,17 @@ window.addEventListener("scroll", rotateSummer);
 
 let poem = document.querySelector(".poem");
 let hot = document.createElement("p");
-hot.innerText="Sometimes the sun is too hot, And often its golden face is dimmed."
+hot.innerText = "Sometimes the sun is too hot, And often its golden face is dimmed."
 let short = document.createElement("p");
-short.innerText="Rough winds shake the beloved buds of May, And summer is far too short."
+short.innerText = "Rough winds shake the beloved buds of May, And summer is far too short."
 let fade = document.createElement("p");
-fade.innerText="Everything beautiful eventually fades, By chance or nature's changing course."
+fade.innerText = "Everything beautiful eventually fades, By chance or nature's changing course."
 let catchSummer = document.createElement("p");
-catchSummer.innerText="Keep scrolling and catch the summer";
+catchSummer.innerText = "Keep scrolling and catch the summer";
 let catchButterfly = document.createElement("p");
 catchButterfly.innerText = "Catch the flying butterfly and begin your summer day";
 let wheel = document.createElement("p");
-wheel.innerText="No summer stays where the days continue to turn."
+wheel.innerText = "No summer stays where the days continue to turn."
 let flower = document.createElement("p");
 flower.innerText = "Do you see the lovely flower?"
 hot.classList.add("hot");
@@ -150,87 +150,180 @@ catchButterfly.classList.add("catchButterfly");
 wheel.classList.add("wheel");
 flower.classList.add("flower");
 
-function addCatchButterfly(){
-let percentage = getScrollPercentage();
-if(percentage >= 0.5 && percentage <=1.5){
-   poem.append(catchButterfly); 
-   console.log("add catchButterfly");
-} else {
-   catchButterfly.remove();
-   console.log("remove catchButterfly");
-}
-}
-window.addEventListener("scroll", addCatchButterfly);
+// function addCatchButterfly(){
+// let percentage = getScrollPercentage();
+// if(percentage >= 0.5 && percentage <=1.5){
+//    poem.append(catchButterfly); 
+//    console.log("add catchButterfly");
+// } else {
+//    catchButterfly.remove();
+//    console.log("remove catchButterfly");
+// }
+// }
+// window.addEventListener("scroll", addCatchButterfly);
+poem.append(catchButterfly);
 
-function addHot(){
-let percentage = getScrollPercentage();
-if(percentage >= 6 && percentage <=34.5){
-   poem.append(hot); 
-   console.log("add hot");
-} else {
-   hot.remove();
-   console.log("remove hot");
-}
+function addHot() {
+    let percentage = getScrollPercentage();
+    if (percentage >= 1.5 && percentage <= 28) {
+        poem.append(hot);
+        console.log("add hot");
+    } else {
+        hot.remove();
+        console.log("remove hot");
+    }
 }
 window.addEventListener("scroll", addHot);
 
-function addWheel(){
-let percentage = getScrollPercentage();
-if(percentage >= 37 && percentage <=40){
-   poem.append(wheel); 
-   console.log("add wheel");
-} else {
-   wheel.remove();
-   console.log("remove wheel");
-}
+function addWheel() {
+    let percentage = getScrollPercentage();
+    if (percentage >= 30 && percentage <= 40) {
+        poem.append(wheel);
+        console.log("add wheel");
+    } else {
+        wheel.remove();
+        console.log("remove wheel");
+    }
 }
 window.addEventListener("scroll", addWheel);
 
 
-function addShort(){
-let percentage = getScrollPercentage();
-if (percentage >=43 && percentage <= 50 ){
-    poem.append(short);
-    console.log("add short") ;
-}else{
-    short.remove();
-    console.log("remove short");
-}
+function addShort() {
+    let percentage = getScrollPercentage();
+    if (percentage >= 43 && percentage <= 50) {
+        poem.append(short);
+        console.log("add short");
+    } else {
+        short.remove();
+        console.log("remove short");
+    }
 }
 window.addEventListener("scroll", addShort);
 
-function addFade(){
-let percentage = getScrollPercentage();
-if (percentage >=55 && percentage <= 62 ){
-    poem.append(fade);
-    console.log("add fade") ;
-}else{
-    fade.remove();
-    console.log("remove fade");
-}
+function addFade() {
+    let percentage = getScrollPercentage();
+    if (percentage >= 55 && percentage <= 62) {
+        poem.append(fade);
+        console.log("add fade");
+    } else {
+        fade.remove();
+        console.log("remove fade");
+    }
 }
 window.addEventListener("scroll", addFade);
 
-function addCatchSummer(){
-let percentage = getScrollPercentage();
-if (percentage >=67 && percentage <= 75 ){
-    poem.append(catchSummer);
-    console.log("add catchSummer") ;
-}else{
-    catchSummer.remove();
-    console.log("remove catchSummer");
-}
+function addCatchSummer() {
+    let percentage = getScrollPercentage();
+    if (percentage >= 65 && percentage <= 70) {
+        poem.append(catchSummer);
+        console.log("add catchSummer");
+    } else {
+        catchSummer.remove();
+        console.log("remove catchSummer");
+    }
 }
 window.addEventListener("scroll", addCatchSummer);
 
-function addFlower(){
-let percentage = getScrollPercentage();
-if (percentage >=79 && percentage <= 87 ){
-    poem.append(flower);
-    console.log("add flower") ;
-}else{
-    flower.remove();
-    console.log("remove flower");
+// function addFlower(){
+// let percentage = getScrollPercentage();
+// if (percentage >=79 && percentage <= 84 ){
+//     poem.append(flower);
+//     console.log("add flower") ;
+// }else{
+//     flower.remove();
+//     console.log("remove flower");
+// }
+// }
+// window.addEventListener("scroll", addFlower);
+
+//seasons
+function windowWasScrolled() {
+    // console.log("scrolled!")
+    let percentage = getScrollPercentage();
+    console.log("percentage", percentage);
+
+    // target 16-45%
+    let g1_start = 70;
+    let g1_end = 90;
+    if (percentage > g1_start && percentage < g1_end) {
+        let performanceLength = g1_end - g1_start;
+        //                              0    -   38        /    38 
+        let animationPercentage = (percentage - g1_start) / performanceLength
+
+        console.log("garfield percentage", animationPercentage)
+
+        let numFrames = 10;
+        let currentImageNumber = Math.floor(animationPercentage * numFrames);
+        // console.log("show image number:", currentImageNumber)
+        let frameSource = "images/season" + (currentImageNumber + 1) + ".png";
+        // console.log("current frame source", frameSource)
+
+        // change image
+        let imgElement = document.querySelector(".gifWrapper img");
+        imgElement.src = frameSource;
+
+        if (currentImageNumber === 5 || currentImageNumber === 6) {
+            imgElement.classList.remove("bw");
+        } else {
+            imgElement.classList.add("bw");
+        }
+    }
+
+
+
+    let g2_start = 90;
+    let g2_end = 97;
+    if (percentage > g2_start && percentage < g2_end) {
+        let performanceLength = g2_end - g2_start;
+        //                              0    -   38        /    38 
+        let animationPercentage = (percentage - g2_start) / performanceLength
+
+        // console.log("garfield percentage", animationPercentage)
+
+        let numFrames = 10;
+        let currentImageNumber = Math.floor(animationPercentage * numFrames);
+        // console.log("show image number:", currentImageNumber)
+        let frameSource = "images/season" + (currentImageNumber + 1) + ".png";
+        // console.log("current frame source", frameSource)
+
+        // change image
+        let imgElement = document.querySelector(".gifWrapper2 img");
+        imgElement.src = frameSource;
+        if (currentImageNumber === 5 || currentImageNumber === 6) {
+            imgElement.classList.remove("bw");
+        } else {
+            imgElement.classList.add("bw");
+        }
+    }
+let g3_start = 97;
+let g3_end = 100;
+if (percentage > g3_start && percentage < g3_end) {
+    let performanceLength = g3_end - g3_start;
+    //                              0    -   38        /    38 
+    let animationPercentage = (percentage - g3_start) / performanceLength
+
+    // console.log("garfield percentage", animationPercentage)
+
+    let numFrames = 10;
+    let currentImageNumber = Math.floor(animationPercentage * numFrames);
+    // console.log("show image number:", currentImageNumber)
+    let frameSource = "images/season" + currentImageNumber + ".png";
+    // console.log("current frame source", frameSource)
+
+    // change image
+    let imgElement = document.querySelector(".gifWrapper3 img");
+    imgElement.src = frameSource;
+     if(currentImageNumber === 5 || currentImageNumber === 6){
+    imgElement.classList.remove("bw");
+    } else {
+    imgElement.classList.add("bw");
+    }
 }
+
 }
-window.addEventListener("scroll", addFlower);
+
+
+
+
+window.addEventListener("scroll", windowWasScrolled);
+

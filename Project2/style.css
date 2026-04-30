@@ -4,59 +4,96 @@ body {
 
 }
 
-.poem p{
+.poem p {
     z-index: 10;
-    position:fixed;
+    position: fixed;
     margin: 0;
     font-family: "Indie Flower", cursive;
     font-size: 50px;
 }
 
-.catchButterfly{
-    top:80%;
-    left:12%;
+.catchButterfly {
+    top: 88%;
+    left: 12%;
+    opacity: 0;
+    animation: butterflyLife 10s ease forwards;
 }
 
-.hot{
-    top: 50%;
-    left:2%;
+@keyframes butterflyLife {
+    0% {
+        opacity: 0;
+    }
+
+    33% {
+        opacity: 0;
+    }
+
+    66% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+.hot {
+    bottom: 8%;
+    left: 2%;
     color: rgb(226, 104, 104);
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.wheel{
+
+
+.wheel {
     top: 50%;
     left: 12%;
     color: darksalmon;
 }
 
-.short{
+.short {
     top: 50%;
     left: 50%;
     color: rgb(44, 100, 80);
 }
 
-.fade{
+.fade {
     top: 50%;
     left: 50%;
     color: rgb(149, 246, 214);
 }
 
-.catchSummer{
-    top:50%;
-    left:50%;
+.catchSummer {
+    top: 50%;
+    left: 25%;
     color: lightblue;
 }
 
-.flower{
-    top:50%;
-    left:50%;
+.flower {
+    top: 50%;
+    left: 50%;
     color: white;
 }
 
 .canvas {
     height: 600vh;
     position: relative;
+}
+
+.scroll-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600vh;   
+    background-image: url("images/background.png");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;          
+    opacity: 0.3; 
 }
 
 .reference {
@@ -72,7 +109,7 @@ body {
 
 .reference img {
     width: 100%;
-    height: 85%;
+    height: 100%;
     opacity: 0.3;
     display: inline-block;
     margin: 0;
@@ -92,7 +129,7 @@ body {
     font-size: 30px;
     text-shadow: 3px 3px 8px rgba(255, 253, 253, 0.4);
     display: inline-block;
-    width: 5px;
+    width: 0px;
     white-space: nowrap;
     overflow: hidden;
     /* animation: increaseWidth 4s forwards steps(25, end); */
@@ -148,7 +185,7 @@ body {
     height: auto;
     width: 100px;
     opacity: 0.5;
-    animation: fly 20s linear 1 forwards;
+    animation: fly 20s linear infinite;
 }
 
 @keyframes fly {
@@ -217,24 +254,34 @@ body {
 .heat {
     margin: 0;
     height: 200vh;
-    background: linear-gradient(to bottom,
+    /* background: linear-gradient(to bottom,
             white 60%,
-            black 100%);
+            black 100%); */
     font-family: "Special Elite", system-ui;
     font-size: 40px;
     position: relative;
     position: sticky;
     top: 0px;
+    /* border: 1px solid blue; */
 }
 
 
 
 .heatP {
-    transition: filter 1s ease,transform 1s ease;
+    transition: filter 2s ease, transform 2s ease;
 }
 
-.wrapper{
-    height: 1000vh;
+.transistion{
+    height: 300vh;
+    background: linear-gradient(to bottom,
+            rgb(255, 255, 255) 20%,
+            black 100%);
+    /* border: 2px solid palevioletred; */
+}
+
+.wrapper {
+    color: aqua;
+    height: 800vh;
     position: relative;
 }
 
@@ -244,21 +291,23 @@ body {
     display: flex;
     /* align-items: center; */
     justify-content: center;
-     position: relative;
+    position: relative;
     position: sticky;
     top: 0px;
 }
-.summer{
+
+.summer {
     width: 100%;
 }
+
 .summer img {
     width: 80%;
     transform-origin: center center;
 }
 
-.black1{
+.black1 {
     /* border: 1px solid white; */
-    height:200vh;
+    height: 200vh;
     width: 50%;
     left: 39.5%;
     z-index: 1;
@@ -267,7 +316,7 @@ body {
     display: flex
 }
 
-.black2{
+.black2 {
     /* border: 1px solid pink; */
     height: 100vh;
     width: 100%;
@@ -276,4 +325,60 @@ body {
     position: absolute;
     background-color: black;
     display: flex
+}
+
+.hi {
+    color: black;
+}
+
+
+.stickyWrapper{
+    height: 300vh;
+    width: 100%;
+    /* outline: 4px dotted white; */
+    background-color: black;
+    
+}
+
+.gifWrapper{
+    position: sticky;
+    top: 50vh;
+    text-align: center;
+}
+
+
+.stickyWrapper2{
+    height: 150vh;
+    width: 100%;
+    /* outline: 4px dotted white; */
+    background-color: black;
+}
+
+.gifWrapper2{
+    position: sticky;
+    top: 50vh;
+    text-align: center;
+}
+
+.stickyWrapper3{
+    height: 60vh;
+    width: 100%;
+    /* outline: 4px dotted white; */
+    background-color: black;
+}
+
+.gifWrapper3{
+    position: sticky;
+    top: 50vh;
+    text-align: center;
+}
+.seasonimg{
+    width: 50%;
+    margin: 0;
+}
+
+.bw{
+
+    filter: grayscale(100%);
+
 }

@@ -3,3 +3,7 @@ body{
    background: linear-gradient(rgb(4, 25, 43),lightblue);
    height: 200vh;
 }
+
+.firework img{
+   width: 100%;
+}
