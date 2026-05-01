@@ -1,394 +1,71 @@
 body {
-    margin: 0;
-    /* background: linear-gradient(rgb(178, 208, 178),white); */
-
+    margin: 0px;
 }
 
-.poem p {
-    z-index: 10;
-    position: fixed;
-    margin: 0;
-    font-family: "Indie Flower", cursive;
-    font-size: 50px;
-}
-
-.poem a {
-    z-index: 10;
-    position: fixed;
-    margin: 0;
-    font-family: "Indie Flower", cursive;
-    font-size: 50px;
-}
-
-.poem a:hover{
-   color: rgb(225, 224, 255);
-}
-
-.catchButterfly {
-    top: 88%;
-    left: 12%;
-    opacity: 0;
-    animation: butterflyLife 8s ease forwards;
-}
-
-@keyframes butterflyLife {
-    0% {
-        opacity: 0;
-    }
-
-    33% {
-        opacity: 0;
-    }
-
-    66% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-
-
-.hot {
-    bottom: 8%;
-    left: 2%;
-    color: rgb(226, 104, 104);
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-
-
-.wheel {
-    top: 50%;
-    left: 12%;
-    color: darksalmon;
-}
-
-.short {
-    top: 50%;
-    left: 50%;
-    color: rgb(44, 100, 80);
-}
-
-.fade {
-    top: 50%;
-    left: 50%;
-    color: rgb(149, 246, 214);
-}
-
-.catchSummer {
-    top: 38%;
-    left: 40%;
-    color: lightblue;
-}
-
-.flower {
-    top: 38%;
-    left: 23%;
-    color: white;
-}
-
-.canvas {
-    height: 600vh;
-    position: relative;
-}
-
-.scroll-bg{
-    position: absolute;
-    top: 0;
-    left: 0;
+.open {
+    z-index: -1;
     width: 100%;
-    height: 600vh;   
-    background-image: url("images/background.png");
-    background-size: cover;
-    background-position: center;
-    z-index: -1;          
-    opacity: 0.3; 
-}
-
-.reference {
-    text-align: center;
-    position: relative;
     height: 100vh;
-    width: 100%;
-    background: linear-gradient(to bottom,
-            rgb(178, 208, 178) 55%,
-            white 100%);
-    display: flex;
 }
 
-.reference img {
+.open img {
     width: 100%;
     height: 100%;
-    opacity: 0.3;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    z-index: 0;
+    opacity: 0.8;
 }
 
-.shall {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 30%;
-    color: white;
-    /* font-family: "Playwrite IE", cursive; */
-    font-family: "Special Elite", system-ui;
-
-    font-size: 30px;
-    text-shadow: 3px 3px 8px rgba(255, 253, 253, 0.4);
-    display: inline-block;
-    width: 0px;
-    white-space: nowrap;
-    overflow: hidden;
-    /* animation: increaseWidth 4s forwards steps(25, end); */
-    z-index: 1;
-}
-
-
-
-.Shakespeare {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+.next {
+    position: fixed;
     top: 40%;
-    color: white;
-    font-family: "Special Elite", system-ui;
-    font-size: 30px;
-    text-shadow: 3px 3px 8px rgba(255, 253, 253, 0.4);
-    display: inline-block;
-    width: 0px;
-    white-space: nowrap;
-    overflow: hidden;
-    /* animation: increaseWidth 4s forwards steps(25, end);
-    animation-delay: 4s; */
-    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.type {
-    animation: increaseWidth 4s forwards steps(25, end);
-}
-
-.typeDelay {
-    animation: increaseWidth 4s forwards steps(25, end);
-    animation-delay: 4s;
-}
-
-@keyframes increaseWidth {
-    from {
-        width: 0px;
-    }
-
-    to {
-        width: 650px;
-    }
-}
-
-.move {
-    position: relative;
-    top: -200px;
-    left: 100px;
-}
-
-.butterfly {
-    height: auto;
-    width: 100px;
-    opacity: 0.5;
-    animation: fly 20s linear infinite;
-}
-
-@keyframes fly {
-    0% {
-        transform: translate(0px, -100px);
-    }
-
-    8% {
-        transform: translate(80px, -40px);
-    }
-
-    15% {
-        transform: translate(250px, -120px);
-    }
-
-    22% {
-        transform: translate(500px, -300px);
-    }
-
-    30% {
-        transform: translate(700px, -80px);
-    }
-
-    38% {
-        transform: translate(900px, -180px);
-    }
-
-    45% {
-        transform: translate(1100px, -40px);
-    }
-
-    50% {
-        transform: translate(1200px, 0px);
-    }
-
-
-    58% {
-        transform: translate(1050px, -200px);
-    }
-
-    66% {
-        transform: translate(850px, -350px);
-    }
-
-    74% {
-        transform: translate(650px, -450px);
-    }
-
-    82% {
-        transform: translate(500px, -550px);
-    }
-
-    90% {
-        transform: translate(350px, -600px);
-    }
-
-    96% {
-        transform: translate(200px, -420px);
-    }
-
-    100% {
-        transform: translate(100px, -300px);
-    }
-}
-
-.heat {
-    margin: 0;
-    height: 200vh;
-    /* background: linear-gradient(to bottom,
-            white 60%,
-            black 100%); */
-    font-family: "Special Elite", system-ui;
+.next p {
     font-size: 40px;
-    position: relative;
-    position: sticky;
-    top: 0px;
-    /* border: 1px solid blue; */
+    color: white;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    filter: brightness(1.2);
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow:
+        0 0 12px rgba(255, 255, 255, 0.9),
+        inset 0 0 18px rgba(255, 255, 255, 0.6),
+        0 12px 24px rgba(0, 0, 0, 0.18);
+    padding: 10px;
+    font-family: "Special Elite", system-ui;
 }
 
-
-
-.heatP {
-    transition: filter 2s ease, transform 2s ease;
+.next a{
+  text-decoration: none;
 }
 
-.transistion{
-    height: 300vh;
-    background: linear-gradient(to bottom,
-            rgb(255, 255, 255) 20%,
-            black 100%);
-    /* border: 2px solid palevioletred; */
+.hint1 {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.wrapper {
-    color: aqua;
-    height: 800vh;
-    position: relative;
+.hint1 p{
+    font-size: 20px;
+    color: white;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    filter: brightness(1.2);
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.seasons {
-    background: black;
-    height: 300vh;
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
-    position: relative;
-    position: sticky;
-    top: 0px;
+.hint2 {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.summer {
-    width: 100%;
-}
-
-.summer img {
-    width: 80%;
-    transform-origin: center center;
-}
-
-.black1 {
-    /* border: 1px solid white; */
-    height: 200vh;
-    width: 50%;
-    left: 39.5%;
-    z-index: 1;
-    position: absolute;
-    background-color: black;
-    display: flex
-}
-
-.black2 {
-    /* border: 1px solid pink; */
-    height: 100vh;
-    width: 100%;
-    top: 23%;
-    z-index: 1;
-    position: absolute;
-    background-color: black;
-    display: flex
-}
-
-.hi {
-    color: black;
-}
-
-
-.stickyWrapper{
-    height: 500vh;
-    width: 100%;
-    /* outline: 4px dotted white; */
-    background-color:black;
-    
-}
-
-.gifWrapper{
-    position: sticky;
-    top: 50vh;
-    text-align: center;
-}
-
-
-.stickyWrapper2{
-    height: 300vh;
-    width: 100%;
-    /* outline: 4px dotted white; */
-    background-color: black;
-}
-
-.gifWrapper2{
-    position: sticky;
-    top: 50vh;
-    text-align: center;
-}
-
-.stickyWrapper3{
-    height: 100vh;
-    width: 100%;
-    /* outline: 4px dotted white; */
-    background-color: black;
-}
-
-.gifWrapper3{
-    position: sticky;
-    top: 50vh;
-    text-align: center;
-}
-.seasonimg{
-    width: 50%;
-    margin: 0;
-}
-
-.bw{
-    filter: grayscale(100%);
+.hint2 p{
+    font-size: 20px;
+    color: white;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    filter: brightness(1.2);
+    font-family: 'Courier New', Courier, monospace;
 }
