@@ -11,6 +11,7 @@ function moveButterfly() {
     butterfly.classList.toggle("fly");
 }
 
+
 let shall = document.querySelector(".shall");
 let Shakespeare = document.querySelector(".Shakespeare");
 butterfly.addEventListener("click", function () {
@@ -77,6 +78,10 @@ document.querySelector(".butterfly").addEventListener("click", function () {
     summerSound.play();
 });
 
+let typing = document.querySelector("#typing");
+document.querySelector(".butterfly").addEventListener("click", function () {
+    typing.play();
+});
 
 function randomPosition(element) {
     element.style.position = "absolute";
@@ -136,27 +141,22 @@ catchSummer.classList.add("catchSummer");
 catchButterfly.classList.add("catchButterfly");
 wheel.classList.add("wheel");
 flower.classList.add("flower");
-
-// function addCatchButterfly(){
-// let percentage = getScrollPercentage();
-// if(percentage >= 0.5 && percentage <=1.5){
-//    poem.append(catchButterfly); 
-//    console.log("add catchButterfly");
-// } else {
-//    catchButterfly.remove();
-//    console.log("remove catchButterfly");
-// }
-// }
-// window.addEventListener("scroll", addCatchButterfly);
 poem.append(catchButterfly);
+poem.append(hot);
+poem.append(wheel);
+poem.append(short);
+poem.append(fade);
+poem.append(catchSummer);
+poem.append(flower);
+
 
 function addHot() {
     let percentage = getScrollPercentage();
-    if (percentage >= 1.5 && percentage <= 20) {
-        poem.append(hot);
+    if (percentage >= 4 && percentage <= 20) {
+        hot.style.opacity="1";
         console.log("add hot");
     } else {
-        hot.remove();
+        hot.style.opacity="0";
         console.log("remove hot");
     }
 }
@@ -165,10 +165,10 @@ window.addEventListener("scroll", addHot);
 function addWheel() {
     let percentage = getScrollPercentage();
     if (percentage >= 25 && percentage <= 37) {
-        poem.append(wheel);
+        wheel.style.opacity="1";
         console.log("add wheel");
     } else {
-        wheel.remove();
+        wheel.style.opacity="0";
         console.log("remove wheel");
     }
 }
@@ -178,10 +178,10 @@ window.addEventListener("scroll", addWheel);
 function addShort() {
     let percentage = getScrollPercentage();
     if (percentage >= 43 && percentage <= 49) {
-        poem.append(short);
+        short.style.opacity="1";
         console.log("add short");
     } else {
-        short.remove();
+        short.style.opacity="0";
         console.log("remove short");
     }
 }
@@ -189,11 +189,11 @@ window.addEventListener("scroll", addShort);
 
 function addFade() {
     let percentage = getScrollPercentage();
-    if (percentage >= 53 && percentage <= 59) {
-        poem.append(fade);
+    if (percentage >= 53 && percentage <= 56) {
+        fade.style.opacity="1";
         console.log("add fade");
     } else {
-        fade.remove();
+        fade.style.opacity="0";
         console.log("remove fade");
     }
 }
@@ -201,11 +201,11 @@ window.addEventListener("scroll", addFade);
 
 function addCatchSummer() {
     let percentage = getScrollPercentage();
-    if (percentage >= 65 && percentage <= 70) {
-        poem.append(catchSummer);
+    if (percentage >= 62 && percentage <= 70) {
+        catchSummer.style.opacity="1";
         console.log("add catchSummer");
     } else {
-        catchSummer.remove();
+        catchSummer.style.opacity="0";
         console.log("remove catchSummer");
     }
 }
@@ -214,10 +214,10 @@ window.addEventListener("scroll", addCatchSummer);
 function addFlower(){
 let percentage = getScrollPercentage();
 if (percentage >=99 && percentage <= 100){
-    poem.append(flower);
+    flower.style.opacity="1";
     console.log("add flower") ;
 }else{
-    flower.remove();
+    flower.style.opacity="0";
     console.log("remove flower");
 }
 }
@@ -309,8 +309,21 @@ if (percentage > g3_start && percentage < g3_end) {
 
 }
 
-
-
-
 window.addEventListener("scroll", windowWasScrolled);
 
+let color = document.createElement("img");
+color.src = "images/season6.png";
+color.alt = "";
+color.classList.add("color");
+poem.append(color);
+function addColor(){
+let percentage = getScrollPercentage();
+if (percentage >= 99.9 ){
+    color.style.opacity="1";
+    console.log("add color") ;
+}else{
+    color.style.opacity="0";
+    console.log("remove color");
+}
+}
+window.addEventListener("scroll", addColor);

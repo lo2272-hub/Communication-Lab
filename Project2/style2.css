@@ -28,7 +28,7 @@ body {
     top: 88%;
     left: 12%;
     opacity: 0;
-    animation: butterflyLife 8s ease forwards;
+    animation: butterflyLife 6s ease forwards;
 }
 
 @keyframes butterflyLife {
@@ -36,11 +36,7 @@ body {
         opacity: 0;
     }
 
-    33% {
-        opacity: 0;
-    }
-
-    66% {
+   50% {
         opacity: 1;
     }
 
@@ -52,10 +48,12 @@ body {
 
 
 .hot {
-    bottom: 8%;
+   top: 50%;
     left: 2%;
-    color: rgb(226, 104, 104);
+    color: rgb(252, 1, 1);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+   transition: opacity 3s ease;
 }
 
 
@@ -64,30 +62,40 @@ body {
     top: 50%;
     left: 12%;
     color: darksalmon;
+    opacity: 0;
+   transition: opacity 3s ease;
 }
 
 .short {
     top: 50%;
     left: 50%;
     color: rgb(44, 100, 80);
+    opacity: 0;
+   transition: opacity 3s ease;
 }
 
 .fade {
     top: 50%;
     left: 50%;
     color: rgb(149, 246, 214);
+    opacity: 0;
+   transition: opacity 2s ease;
 }
 
 .catchSummer {
     top: 38%;
     left: 40%;
     color: lightblue;
+    opacity: 0;
+   transition: opacity 2s ease;
 }
 
 .flower {
     top: 38%;
     left: 23%;
     color: white;
+    opacity: 0;
+   transition: opacity 3s ease;
 }
 
 .canvas {
@@ -175,6 +183,38 @@ body {
 .typeDelay {
     animation: increaseWidth 4s forwards steps(25, end);
     animation-delay: 4s;
+}
+
+.arrow{
+    width: 150px;
+    height: auto;
+    position: fixed;
+    top: 70%;
+    left:46%;
+   z-index: 11;
+    opacity: 0;
+    animation: arrowFadeIn 15s ease forwards;
+
+}
+
+@keyframes arrowFadeIn{
+
+     0% {
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+   80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
 }
 
 @keyframes increaseWidth {
@@ -391,4 +431,14 @@ body {
 
 .bw{
     filter: grayscale(100%);
+}
+
+.color{
+   width: 50%;
+   position: fixed;   
+   bottom: 0;
+   left: 25%;
+   z-index: 50;
+   opacity: 0;
+   transition: opacity 3s ease;
 }
