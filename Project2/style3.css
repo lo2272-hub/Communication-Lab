@@ -1,9 +1,9 @@
-body{
+body {
    margin: 0px;
    height: 150vh;
 }
 
-.paper{
+.paper {
    position: absolute;
    top: 0px;
    left: 0px;
@@ -12,34 +12,258 @@ body{
    z-index: -1;
 }
 
-.paper img{
+.paper img {
    width: 100%;
    height: auto;
 }
 
-.watermelon img{
-   width: 200px;
-   height: 200px;
+.watermelon img {
+   width: 220px;
+   height: 220px;
    position: absolute;
    top: 30%;
    left: 22%;
    opacity: 0.8;
    z-index: 2;
-   transition: opacity 1s ease;
+   transition: opacity 3s ease;
 }
 
-.watermelon img:hover{
+.watermelon img:hover {
    opacity: 0;
-   transition: opacity 1s ease;
+   transition: opacity 3s ease;
 }
 
-.watermelon p{
-   color: black;
-    position: absolute;
-   top: 25%;
-   left: 20%;
+.watermelon p {
+   color: pink;
+   position: absolute;
+   top: 30%;
+   left: 22%;
    opacity: 0.8;
    font-size: 20px;
-   z-index: 1;
+   z-index: 0;
 }
 
+.firework img {
+   width: 300px;
+   height: 200px;
+   position: absolute;
+   top: 55%;
+   left: 50%;
+   opacity: 0.8;
+   z-index: 2;
+   transition: opacity 3s ease;
+}
+
+.firework img:hover {
+   opacity: 0;
+   transition: opacity 3s ease;
+}
+
+.swim img {
+   width: 220px;
+   height: 200px;
+   position: absolute;
+   top: 74%;
+   left: 30%;
+   opacity: 0.8;
+   z-index: 2;
+   transition: opacity 3s ease;
+}
+
+.swim img:hover {
+   opacity: 0;
+   transition: opacity 3s ease;
+}
+
+.icecream img {
+   width: 250px;
+   height: 200px;
+   position: absolute;
+   top: 95%;
+   left: 62%;
+   opacity: 0.8;
+   z-index: 2;
+   transition: opacity 3s ease;
+}
+
+.icecream img:hover {
+   opacity: 0;
+   transition: opacity 3s ease;
+}
+
+.bloom img {
+   width: 240px;
+   height: 200px;
+   position: absolute;
+   top: 110%;
+   left: 25%;
+   opacity: 0.8;
+   z-index: 2;
+   transition: opacity 3s ease;
+}
+
+.bloom img:hover {
+   opacity: 0;
+   transition: opacity 3s ease;
+}
+
+.beach img {
+   width: 530px;
+   height: 150px;
+   position: absolute;
+   top: 130%;
+   left: 51%;
+   opacity: 0.8;
+   z-index: 2;
+   transition: opacity 3s ease;
+}
+
+.beach img:hover {
+   opacity: 0;
+   transition: opacity 3s ease;
+}
+
+.paper p {
+   font-size: 30px;
+   position: absolute;
+   font-family: "Indie Flower", cursive;
+}
+
+.w {
+   top: 280px;
+   left: 330px;
+   color: black;
+}
+
+.f {
+   top: 450px;
+   left: 750px;
+   color: black;
+}
+
+.s {
+   top: 620px;
+   left: 450px;
+   color: black;
+}
+
+.i {
+   top: 800px;
+   left: 930px;
+   color: black;
+}
+
+.o {
+   top: 1100px;
+   left: 760px;
+   color: black;
+}
+
+.b {
+   top: 930px;
+   left: 380px;
+   color: black;
+}
+
+.live {
+   position: fixed;
+   top: 20%;
+   left: 40%;
+   color: black;
+   opacity: 0;
+   transition: opacity 3s ease;
+}
+
+.pic {
+   position: fixed;
+   top: 23%;
+   left: 50%;
+   color: rgb(34, 77, 115);
+   opacity: 0;
+   transition: opacity 3s ease;
+}
+
+.short {
+   position: fixed;
+   top: 35%;
+   left: 22%;
+   color: black;
+   opacity: 0;
+   transition: opacity 3s ease;
+}
+
+.feel {
+   position: fixed;
+   top: 45%;
+   left: 50%;
+   color: black;
+   opacity: 0;
+   transition: opacity 3s ease;
+}
+
+.like{
+   position: fixed;
+   top: 48%;
+   left: 55%;
+   color: rgb(9, 133, 53);
+   opacity: 0;
+   transition: opacity 3s ease;
+}
+
+.neverFade{
+   position: fixed;
+   top: 55%;
+   left: 20%;
+   color: rgb(158, 65, 93);
+   opacity: 0;
+   transition: opacity 3s ease;
+}
+
+.lose{
+   position: fixed;
+   top: 67%;
+   left: 48%;
+   color: rgb(99, 89, 13);
+   opacity: 0;
+   transition: opacity 3s ease;
+}
+
+.lose{
+   position: fixed;
+   top: 67%;
+   left: 48%;
+   color: rgb(99, 89, 13);
+   opacity: 0;
+   transition: opacity 3s ease;
+}
+
+.thank{
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   height: auto;
+   z-index: -1;
+}
+
+.thx{
+   position: fixed;
+   top: 80%;
+   left: 35%;
+   color: white;
+   opacity: 0;
+   transition: opacity 5s ease;
+   font-size: 20px;
+   font-family: 'Courier New', Courier, monospace;
+}
+
+.back{
+   position: fixed;
+   top: 90%;
+   left: 50%;
+   color: white;
+   opacity: 0;
+   transition: opacity 5s ease;
+   font-size: 20px;
+   font-family: 'Courier New', Courier, monospace;
+}
