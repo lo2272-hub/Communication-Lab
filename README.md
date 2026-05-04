@@ -26,6 +26,9 @@ I mainly learn html and css right now. But I'm looking forward to exploring more
 - [Clock](https://lo2272-hub.github.io/Communication-Lab/Recitation11/)
 
 ![Clock](clock.png)
+- [Shall I Compare You to A Summer Day](https://lo2272-hub.github.io/Communication-Lab/Project2/)
+
+![project2](summer.png)
 
 Below is me  ૮꒰ ྀི˶• ๑ •˶ ྀི꒱ა
 
