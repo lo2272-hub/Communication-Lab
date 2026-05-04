@@ -152,7 +152,7 @@ window.addEventListener("scroll", addLose);
 
 function addThx() {
     let percentage = getScrollPercentage();
-    if (percentage >= 132) {
+    if (percentage >= 134) {
         thx.style.opacity="1";
         console.log("add thx");
         back.style.opacity="1";

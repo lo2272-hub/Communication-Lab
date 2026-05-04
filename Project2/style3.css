@@ -263,7 +263,7 @@ body {
    left: 50%;
    color: white;
    opacity: 0;
-   transition: opacity 5s ease;
+   transition: opacity 8s ease;
    font-size: 20px;
    font-family: 'Courier New', Courier, monospace;
 }
