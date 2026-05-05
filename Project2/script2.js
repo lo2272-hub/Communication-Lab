@@ -229,12 +229,12 @@ function windowWasScrolled() {
     let percentage = getScrollPercentage();
     console.log("percentage", percentage);
 
-    // target 16-45%
+    // target 61-83%
     let g1_start = 61;
     let g1_end = 83;
     if (percentage > g1_start && percentage < g1_end) {
         let performanceLength = g1_end - g1_start;
-        //                              0    -   38        /    38 
+        //                              0    -   61        /    22 
         let animationPercentage = (percentage - g1_start) / performanceLength
 
         console.log("garfield percentage", animationPercentage)
