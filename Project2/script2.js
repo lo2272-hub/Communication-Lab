@@ -242,7 +242,7 @@ function windowWasScrolled() {
         let numFrames = 10;
         let currentImageNumber = Math.floor(animationPercentage * numFrames);
         // console.log("show image number:", currentImageNumber)
-        let frameSource = "images/season" + (currentImageNumber + 1) + ".png";
+        let frameSource = "small/season" + (currentImageNumber + 1) + ".jpg";
         // console.log("current frame source", frameSource)
 
         // change image
@@ -270,7 +270,7 @@ function windowWasScrolled() {
         let numFrames = 10;
         let currentImageNumber = Math.floor(animationPercentage * numFrames);
         // console.log("show image number:", currentImageNumber)
-        let frameSource = "images/season" + (currentImageNumber + 1) + ".png";
+        let frameSource = "small/season" + (currentImageNumber + 1) + ".jpg";
         // console.log("current frame source", frameSource)
 
         // change image
@@ -294,7 +294,7 @@ if (percentage > g3_start && percentage < g3_end) {
     let numFrames = 10;
     let currentImageNumber = Math.floor(animationPercentage * numFrames);
     // console.log("show image number:", currentImageNumber)
- let frameSource = "images/season" + (currentImageNumber + 1) + ".png";
+ let frameSource = "small/season" + (currentImageNumber + 1) + ".jpg";
      // console.log("current frame source", frameSource)
 
     // change image
