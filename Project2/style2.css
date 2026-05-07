@@ -338,7 +338,7 @@ body {
 }
 
 .seasons {
-    background: black;
+    background: rgb(0, 0, 0);
     height: 300vh;
     display: flex;
     /* align-items: center; */
@@ -349,34 +349,47 @@ body {
 }
 
 .summer {
-    width: 100%;
+    /* width: 80%; */
+    height: 100vh;
+    /* aspect-ratio: 1/1; */
+    background-color: black;
+    transform: translateX(-10%);
+    position: relative;
 }
 
 .summer img {
-    width: 80%;
-    transform-origin: center center;
+    height: 100%;
+    /* transform-origin: center center; */
 }
 
 .black1 {
-    /* border: 1px solid white; */
-    height: 200vh;
-    width: 50%;
-    left: 39.5%;
-    z-index: 1;
     position: absolute;
+    /* border: 1px solid white; */
+    outline: 1px solid black;
+    /* height: 200vh; */
+    width: 50%;
+    height: 90vh;
+    top:0px;
+    left:50%;
+    /* left: 39.5%; */
+    /* z-index: 1; */
+    
     background-color: black;
-    display: flex
+    /* display: flex */
 }
 
 .black2 {
     /* border: 1px solid pink; */
-    height: 100vh;
+    outline: 1px solid black;
+
+    height: 50vh;
     width: 100%;
-    top: 23%;
-    z-index: 1;
+    top: 50%;
+    left:0;
+    /* z-index: 1; */
     position: absolute;
     background-color: black;
-    display: flex
+    /* display: flex */
 }
 
 .hi {
