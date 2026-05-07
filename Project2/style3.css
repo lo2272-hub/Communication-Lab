@@ -8,13 +8,13 @@ body {
    top: 0px;
    left: 0px;
    width: 100%;
-   height: auto;
+   height: 150vh;
    z-index: -1;
 }
 
 .paper img {
    width: 100%;
-   height: auto;
+   height: 180vh;
 }
 
 .watermelon img {
@@ -33,15 +33,6 @@ body {
    transition: opacity 3s ease;
 }
 
-.watermelon p {
-   color: pink;
-   position: absolute;
-   top: 30%;
-   left: 22%;
-   opacity: 0.8;
-   font-size: 20px;
-   z-index: 0;
-}
 
 .firework img {
    width: 300px;
@@ -130,44 +121,44 @@ body {
 }
 
 .w {
-   top: 280px;
-   left: 330px;
+   top: 22%;
+   left: 23%;
    color: black;
 }
 
 .f {
-   top: 450px;
-   left: 750px;
+   top: 38%;
+   left: 53%;
    color: black;
 }
 
 .s {
-   top: 620px;
-   left: 450px;
+   top: 50%;
+   left: 31%;
    color: black;
 }
 
 .i {
-   top: 800px;
-   left: 930px;
+   top: 65%;
+   left: 63%;
    color: black;
 }
 
 .o {
-   top: 1100px;
-   left: 760px;
+   top: 85%;
+   left:55%;
    color: black;
 }
 
 .b {
-   top: 930px;
-   left: 380px;
+   top:75%;
+   left: 26%;
    color: black;
 }
 
 .live {
    position: fixed;
-   top: 20%;
+   top: 25%;
    left: 40%;
    color: black;
    opacity: 0;
@@ -176,7 +167,7 @@ body {
 
 .pic {
    position: fixed;
-   top: 23%;
+   top: 28%;
    left: 50%;
    color: rgb(34, 77, 115);
    opacity: 0;
@@ -185,7 +176,7 @@ body {
 
 .short {
    position: fixed;
-   top: 35%;
+   top: 40%;
    left: 22%;
    color: black;
    opacity: 0;
@@ -194,7 +185,7 @@ body {
 
 .feel {
    position: fixed;
-   top: 45%;
+   top: 52%;
    left: 50%;
    color: black;
    opacity: 0;
@@ -203,7 +194,7 @@ body {
 
 .like{
    position: fixed;
-   top: 48%;
+   top: 55%;
    left: 55%;
    color: rgb(9, 133, 53);
    opacity: 0;
@@ -212,7 +203,7 @@ body {
 
 .neverFade{
    position: fixed;
-   top: 55%;
+   top: 66%;
    left: 20%;
    color: rgb(158, 65, 93);
    opacity: 0;
@@ -221,21 +212,13 @@ body {
 
 .lose{
    position: fixed;
-   top: 67%;
+   top: 80%;
    left: 48%;
    color: rgb(99, 89, 13);
    opacity: 0;
    transition: opacity 3s ease;
 }
 
-.lose{
-   position: fixed;
-   top: 67%;
-   left: 48%;
-   color: rgb(99, 89, 13);
-   opacity: 0;
-   transition: opacity 3s ease;
-}
 
 .thank{
    position: absolute;
