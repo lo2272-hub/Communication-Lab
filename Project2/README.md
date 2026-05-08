@@ -132,4 +132,12 @@ Besides, there are two audio inside, which I can also put them in ```<div class=
 ```<div class="summer">``` has the image of the wheel of seasons inside. While ```<div class="black1">```and```<div class="black2">``` are just the black boxes to hide the additional parts of the wheel during the rotating interaction.
 
 <img src="wheel1.png" width=80%>
-<img src="wheel.gif" width=50%>
+
+- For seasons changing section
+
+```<div class="stickyWrapper">```, ``` <div class="stickyWrapper2">``` and ``` <div class="stickyWrapper3">``` are in the same hierachy and the same inner structure.
+
+Each of them has a ```<div class="gifWrapper">``` inside which contains of images.
+
+<img src="change.png" width=80%>
+<img src="changeDiv.png" width=80%>

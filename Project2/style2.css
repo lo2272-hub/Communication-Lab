@@ -412,6 +412,7 @@ body {
     position: sticky;
     top: 50vh;
     text-align: center;
+    /* border: 2px greenyellow solid; */
 }
 
 
@@ -426,6 +427,7 @@ body {
     position: sticky;
     top: 50vh;
     text-align: center;
+    /* border: 2px pink solid; */
 }
 
 .stickyWrapper3{
