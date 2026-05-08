@@ -137,7 +137,17 @@ Besides, there are two audio inside, which I can also put them in ```<div class=
 
 ```<div class="stickyWrapper">```, ``` <div class="stickyWrapper2">``` and ``` <div class="stickyWrapper3">``` are in the same hierachy and the same inner structure.
 
-Each of them has a ```<div class="gifWrapper">``` inside which contains of images.
+Each of them has a ```<div class="gifWrapper">``` inside which contains the images.
 
 <img src="change.png" width=80%>
 <img src="changeDiv.png" width=80%>
+
+**Ending Page**
+
+There is one big div ```<div class="sticker">```
+
+Inside the big div, there are six small div containing different images in different size. (Such as ```<div class="firework">``` and ```<div class="icecream">```)
+
+There is an addtional div called ```<div class="paper">```. It is responsible for the background amd ```<p>``` right above the background.
+
+<img src="end.png" width=80%>
