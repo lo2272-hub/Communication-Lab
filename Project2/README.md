@@ -78,3 +78,18 @@ Therefore, I choose to present summer itself to the viewers first, and only late
 When I think about the web as a newer medium, I feel that some of these limitations can be reduced. On a website, I can design the structure and interactions to guide viewers through a particular experience and help them feel what I want them to feel. Viewers are no longer just reading from the outside. They move through the story and become part of the journey.
 
 A website also allows me to involve more senses, which makes the experience more immersive and dynamic. For example, instead of directly saying *“summer is hot,”* I use blur effects, scrolling, and changes in position and size to let viewers feel the heat and discomfort in a more intuitive way.
+
+---
+
+## Technical HTML
+
+**Start Page**
+
+It contains 4 parallel```div``` boxes.
+
+```<div class="open">``` is responsible for the background image.
+```<div class="next">``` is the div for the clickable button which link to second page. 
+```<div class="hint1">``` and ```<div class="hint2">```are both the instructions, Because I want them in the center and want to control the space between each line, I divide them into two lines.
+
+<img src="start.png" width=50%>
+<img src="codeStart.png" width=50%>
