@@ -122,3 +122,14 @@ There are multiple ```<p class="heatP">``` inside ```<div class="heat">``` becau
 Besides, there are two audio inside, which I can also put them in ```<div class="move">```, because they are controlled by the clickable butterfly.
 
 <img src="heatDiv.png" width=50%>
+
+```<div class="wrapper">``` is all about the wheel section.
+
+- For wheel section 
+
+```<div class="summer">```,```<div class="black1">```and```<div class="black2">``` are in the same hierachy.
+
+```<div class="summer">``` has the image of the wheel of seasons inside. While ```<div class="black1">```and```<div class="black2">``` are just the black boxes to hide the additional parts of the wheel during the rotating interaction.
+
+<img src="wheel1.png" width=80%>
+<img src="wheel.gif" width=50%>
