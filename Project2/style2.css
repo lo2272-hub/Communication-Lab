@@ -101,6 +101,7 @@ body {
 .canvas {
     height: 600vh;
     position: relative;
+    border: 5px pink solid;
 }
 
 .scroll-bg{

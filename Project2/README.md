@@ -88,8 +88,37 @@ A website also allows me to involve more senses, which makes the experience more
 It contains 4 parallel```div``` boxes.
 
 ```<div class="open">``` is responsible for the background image.
+
 ```<div class="next">``` is the div for the clickable button which link to second page. 
+
 ```<div class="hint1">``` and ```<div class="hint2">```are both the instructions, Because I want them in the center and want to control the space between each line, I divide them into two lines.
 
 <img src="start.png" width=50%>
 <img src="codeStart.png" width=50%>
+
+**Main Page**
+
+It contains 6 big ```div```
+
+<img src="mainPage.png" width=50%>
+
+```<div class="poem">``` contains all the orignal texts and my adaptations. It moves and changes with scrolling and will not be affected by other sections' interactions.
+
+```<div class=canvas>``` contains the introduction section and the heat section.
+
+- For introduction section:
+
+```<div class="reference">``` has ```<p class="shall">```and```<p class="Shakespeare">``` for the typing text.
+
+```<div class="move">``` is a div which only responsible for the moving butterfly.
+
+<img src="intro.png" width=80%>
+<img src="intro2.png" width=80%>
+
+- For heat section:
+
+There are multiple ```<p class="heatP">``` inside ```<div class="heat">``` because I want to manipulate text inside.
+
+Besides, there are two audio inside, which I can also put them in ```<div class="move">```, because they are controlled by the clickable butterfly.
+
+<img src="heatDiv.png" width=50%>
