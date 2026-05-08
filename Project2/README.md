@@ -11,7 +11,7 @@ Because the original work is a poem, people can only see the text, which can som
 
 The key idea guiding my version is not to build one hundred percent on the original, but to follow the inspiration I got from the poet and add my own feelings about summer, such as how to present the heat of summer, how to let people feel the shortness of summer, and where the beauty of summer exists in our daily life.
 
-<img src="doc1.gif" width=80%>
+<img src="doc1.png" width=80%>
 <img src="doc2.gif" width=80%>
 <img src="doc3.gif" width=80%>
 
