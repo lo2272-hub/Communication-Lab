@@ -43,19 +43,19 @@ Additionally, I rearranged the order of the poem and removed some parts to bette
 
 ### Shaping Narrative Through Browser Affordances
 
-**Scrolling**
+**Scrolling:**
 Scrolling is the primary interaction used in my website. As viewers scroll down, they gradually move through the poem. I chose this interaction because scrolling allows people to sense the passage of time. Since I want viewers to be aware of time throughout the experience, scrolling felt like a natural choice.
 In the section that represents the change of seasons, scrolling helps convey how quickly a year passes. Time moves linearly. It only goes forward and never turns back, so I speed up the visual changes without altering other elements.
 However, viewers can always scroll back up to revisit any part they wish to explore further. When they move forward again, they might have a different feeling from before.
 
-**Clicking**
+**Clicking:**
 I consider clicking as an interaction that usually introduces new elements to a page. However, I was concerned that using too much clicking might disrupt the gentleness and consistency of the overall narrative. As a result, clicking in my website functions more as a trigger to begin or transition between sections.
 
 Instead of adding a simple button labeled *“click to continue,”* I place poetic and descriptive hints beside each clickable element. For example, at the very beginning, I designed a moving butterfly as a clickable button. I chose a butterfly because it naturally fits the atmosphere of summer and its ability to fly aligns well with the animation I wanted to create. Since the opening scene only shows the background and the flying butterfly, viewers might feel unsure about what to do next. I therefore added the hint, *“catch the butterfly and begin your summer days.”* This line suggests that viewers are not just observers, but participants in the experience.
 
 Another clickable element is a link that leads to the ending section. My concept consists of two contrasting parts, moving from disliking summer to embracing it. If these parts appeared on the same page, the transition might feel confusing. Therefore, I embedded a link within the text that highlights the uniqueness of summer, guiding viewers from the negative aspects toward the beauty of summer in a clearer and more intentional way.
 
-**Sound**
+**Sound:**
 I use two types of audio in my project. One is the typing sound, and the other is the sound of summer days. The typing sound enhances the realism of the typing effect and helps viewers feel more immersed as the text appears word by word. The sound of summer days, including birds and cicadas, further deepens this immersion and reinforces the feeling that the entire webpage is centered around summer.
 
 However, because I cannot predict how long viewers will take to go through the webpage, the summer sound plays only once and then stops automatically.
@@ -68,9 +68,13 @@ Therefore, I choose to present summer itself to the viewers first, and only late
 
 ### Gestalt Theory and Medium-awareness
 **Similarity:** I use the same style of design throughout the whole website. Such as using green to represent summer and using hand written font to make it look more artistic and poetic. 
+
 **Continuity:** The scrolling interaction guides the viewer’s eye naturally downward, creating a clear and intuitive visual path to follow. As the text appears one by one with gentle fade-in and fade-out transitions, the movement feels smooth and uninterrupted.
+
 **Closure:** I apply the closure principle in the part where I design the wheel of a year. Although only summer is visually presented through images, the remaining seasons are intentionally left blank and invisible. Viewers naturally complete the missing parts in their minds, perceiving the circle as a full representation of all four seasons. This absence guides attention toward summer while still allowing the whole year to be understood through imagination.
+
 **Figure ground:** I avoided using fancy colors or background images, so the contrast naturally directs viewers’ attention to the foreground content. I also increase the brightness of the text in white to make them more readable.
+
 **“Medium is the message”** makes me think about the difference between poetry and a website as two very different mediums. Poetry has a long history. In poems, writers rely on carefully chosen words and sentence structures to express subtle feelings. Readers stay outside the work, and each person may understand it in a different way. This also shows a limitation of poetry. Poets often do not know whether readers truly understand what they mean. Some metaphors may feel too abstract, and some lines may only make sense to certain people.
 
 When I think about the web as a newer medium, I feel that some of these limitations can be reduced. On a website, I can design the structure and interactions to guide viewers through a particular experience and help them feel what I want them to feel. Viewers are no longer just reading from the outside. They move through the story and become part of the journey.
