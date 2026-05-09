@@ -2,6 +2,8 @@
 ## by Lisa
 *A website where, by moving through the heat and fleeting rush of summer, the beauty of a summer’s day slowly and quietly unfolds.*
 
+(･ω<)☆
+
 This project is an interactive website which brings the intangible feelings of summer to life through a gentle visual experience. By moving through its heat, haste, and fleeting moments, visitors gradually rediscover the beauty of a summer’s day.
 
 ## Abstract
@@ -33,7 +35,7 @@ In this part, I keep some of the original lines as subtitles to help viewers und
 ![no summer](no.png)
 
 Another major change is the transition from the downsides of summer to its beauty, which reflects more of my personal interpretation. The poem suggests that beautiful things will eventually fade as time passes. However, I reinterpret this idea by suggesting that the beauty of one’s inner summer does not fade as long as one can breathe and see. I transform this profound ending into a simpler and more understandable version.
-I use familiar and common objects to help viewers recall their own sweet memories, allowing them to feel that the beauty of summer exists in every small, even unnoticeable moment. Although summer is hot and short, it still has its own beauty, just like you and me.
+I use familiar and common objects to help viewers recall their own sweet memories, allowing them to feel that the beauty of summer exists in every small, even unnoticeable moment. Although summer is hot and short, it still has its own beauty, just like you and me. 🍦🍉🎇
 
 ![ending](ending.png)
 
@@ -93,7 +95,7 @@ It contains 4 parallel```div``` boxes.
 
 ```<div class="hint1">``` and ```<div class="hint2">```are both the instructions, Because I want them in the center and want to control the space between each line, I divide them into two lines.
 
-<img src="start.png" width=50%>
+<img src="start.png" width=80%>
 <img src="codeStart.png" width=50%>
 
 **Main Page**
@@ -140,7 +142,7 @@ Besides, there are two audio inside, which I can also put them in ```<div class=
 Each of them has a ```<div class="gifWrapper">``` inside which contains the images.
 
 <img src="change.png" width=80%>
-<img src="changeDiv.png" width=80%>
+<img src="changeDiv.png" width=50%>
 
 **Ending Page**
 
@@ -151,3 +153,102 @@ Inside the big div, there are six small div containing different images in diffe
 There is an addtional div called ```<div class="paper">```. It is responsible for the background amd ```<p>``` right above the background.
 
 <img src="end.png" width=80%>
+
+---
+## Technical CSS
+
+### Summary of the key CSS decisions
+
+- I created a butterfly flying animation which simulates the natural movement of a butterfly. This not only adds liveliness to the page but also reinforces the thematic connection to summer and nature.
+
+- I also applied a typing animation to simulate a typewriter effect. The slight delay rhythm makes the text feel more human and emotionally expressive, rather than appearing instantly on the screen.
+
+<img src="typecss.png" width=50%>
+<img src="typejs.png" width=50%>
+
+- To support user interaction, I made each section stick to the top of the screen until the interaction is completed. This prevents users from scrolling past important interactive moments and encourages them to engage more intentionally with the content.
+
+- Additionally, I designed hover effects that trigger different interactions when users move their cursor over certain elements.
+
+- I also add fade-in and fade-out transitions for text and visual elements. This helps the content appear more harmonious and ensures smoother visual flow between sections.
+
+### The significant interactive element:
+
+It’s very cool to see how the image change frequency speeds up as you scroll. The image sources I use are a series of photos taken at the same place but in different seasons. I use this interaction to convey the idea that summer exists for only a quarter of the year and to visualize the feeling of time passing faster and faster.
+
+**In JavaScript:**
+
+I developed this with the professor’s help. We used the function we learned in class to calculate the percentage of the window that has been scrolled. Then, by using console.log, we identified the start and end percentages of each interval. We calculated the performance length by subtracting the start percentage from the end percentage.
+
+We convert the window’s scroll percentage into an animation percentage because we need ```animationPercentage``` to normalize the scroll range into a 0–1 progress value, so it can be accurately mapped to the image frame sequence.
+
+For the image section, I have 10 images in total. By dividing them into equal intervals, they appear at the same frequency. In addition, because image numbers must be integers, we use the ```Math.floor``` function to ensure smooth transitions between frames.
+
+<img src="js.png" width=50%>
+
+**In CSS:**
+For each wrapper div, I give them different height. A high div will slow down the speed, while a short div will speed up the movement. The gifWrapper div is sticky to the main wrapper fo better interaction experience.
+
+<img src="sticky1.png" width=50%>
+<img src="sticky2.png" width=50%>
+<img src="sticky3.png" width=50%>
+<img src="pre.gif" width=80%>
+
+---
+## Reflection
+
+### Changes from Initial Idea to Final Version
+
+My initial idea was just presenting the original text in different versions, such as using different languages and adding different effects to the texts. However, I gradually realized that this does not make sense because I am supposed to use websites as a medium to reconstruct and reinterpret the poem, instead of presenting it directly. I should let viewers get the point of summer not through text, but through the experience and their feeling when they go through the website.  Therefore, I changed my point of view, shifting my attention to how to make people feel the characteristics of summer that are described in the poem, and how to turn these abstract and intangible feelings to something real and understandable.
+
+### Telling Stories in the Medium of the Web
+
+First, I realized that the web offers far more possibilities than many traditional mediums. It can combine multiple sensations, such as visuals, sound, movement, and interaction, into one unified experience.
+
+Second, the web allows interactions to become unexpected triggers, almost like a game. Each action a viewer takes can lead to a different process or outcome. Compared with mediums such as film or books, this creates a stronger sense of surprise and unpredictability。
+
+Finally, I learned that storytelling on the web can be both narrative and interactive at the same time. Instead of presenting a story in a one-way direction, the web allows viewers to participate in the storytelling process through their actions.
+
+### Successful Part
+
+One part I consider successful is the blurry text section. I used the  percentage fiction to make the text gradually blur and then return to clarity as viewers scroll. At the same time, viewers can hover over each single text to move it to a new position. Following my professor’s suggestion, I made the text container stick to the top and added a white background with black dots. This helps viewers realize that they can continue scrolling to the next part while still interacting with the text.
+
+<img src="blurry.gif" width=80%>
+
+### Part that I Want to Improve 
+
+The first area I would like to improve is the wheel of seasons section. My initial method for showing only one quarter of the rotating wheel was to use a black block to cover the rest. However, because the image I used is not perfectly symmetrical, it was difficult to center it and align it precisely with the black block. I had to manually adjust the position using percentages. While this looks fine on my own screen, the layout breaks on screens of different sizes.
+
+I also want to add background images to strengthen the feeling of summer in this section. To do that, I will need a different way to hide the rest of the wheel instead of relying on the black block method.
+
+ The second improvement relates to the speeding up of the seasonal changes. I want viewers to feel how briefly summer exists within a year. During office hours, my professor and I tried controlling this by placing images in different divs and adjusting the height of each section. By mapping image changes to the scroll percentage between a start and end point, a taller section (for example, 500vh) creates a slower transition, while a shorter one (around 10vh) makes the change feel faster. However, this approach creates a limitation. Because each section has its own height and image sequence, the website ends up displaying multiple combinations of images depending on how many sections are created. What I really hope to achieve is a single continuous image sequence that plays only once from beginning to end, while gradually accelerating as the viewer scrolls.
+
+### Part that I Want to Expand
+
+ I would like to add more interactive elements to the ending section, as it represents an important turning point in the narrative. Instead of relying mainly on text, I want to replace parts of it with interactions. I want to make the typical yet familiar summer elements clickable. For example, clicking on a firework could make it bloom in the sky, and clicking on an ice cream could allow viewers to type in their favorite flavor. In this way, viewers would experience the beauty of summer more vividly through interaction, rather than only reading about it.
+  
+### Feedback from Peers and Instructors
+
+- Interaction day: 
+
+I received feedback that some of my text appeared too suddenly. As a result, I added fade-in and fade-out effects to make the appearance of the text feel smoother and more natural. I was also advised to include clearer hints to help viewers understand how to interact with the webpage, since some interactions were not immediately obvious. Another suggestion was to add a starting page. Previously, viewers had to refresh the page each time to restart the experience. The starting page now makes the entry into the website more user-friendly.
+
+- Presentation: 
+I was reminded that screen size is very important in web design.It is always better to use percentage-based layouts instead of fixed units like pixels to ensure the website adapts better to different screens.
+
+I also received the suggestion to replace some text with more engaging interactions that could create the same emotional effect. This would allow me to make better use of the strengths of the web as a medium.
+
+### How to Continue the Project beyond the Class
+
+If I will continue developing this project, I would focus on improving the ending section to make it more interactive and memorable. Since this part represents an emotional turning point, I want viewers to engage with it more actively rather than simply reading text.
+I would design interactions that are meaningful and clearly connected to the content. For example, clicking on a firework to make it bloom is intuitive and closely related to the feeling of summer. Interactions like this can help viewers form a stronger emotional connection to the experience, while avoiding actions that feel too abstract or confusing. By doing so, I hope to make the ending more immersive and leave a deeper impression on viewers.
+
+---
+## Credits & References
+- Orininal text from Shakespeare, William. Sonnet 18. “Shall I compare thee to a summer’s day?”
+- Some images from [Rednote](https://www.xiaohongshu.com)
+- Some images are generated by [ChatGPT](https://chat.chatbot.app/gpt5?utm_source=GoogleAds&utm_medium=cpc&utm_campaign={campaign}&utm_id=23302972001&utm_term=189813945752&utm_content=800039943773&gad_source=1&gad_campaignid=23302972001&gbraid=0AAAAA_a6ETu1h5Jy1CIVMHzUKE2XJop-Y&gclid=CjwKCAjwjtTNBhB0EiwAuswYhmURzyibeqw9m4T5MRZ3rbbyeibFY5RBBKSq-43UrdDiihHkCPSBZRoC0_sQAvD_BwE) and [Lovart](https://www.lovart.ai/zh/home)
+- Some images from [Youtube](https://www.youtube.com/watch?v=lmIFXIXQQ_)
+- Professor's help with challenges
+
+*Thank you for watching and being a part of the summer days* 💚
